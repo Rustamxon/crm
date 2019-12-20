@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GOCRM</title>
+    <link rel="icon" href="img/icon.png">
+    <!-- css libs start -->
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/slider.style.css">
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/libs/fullpage.min.css">
+    <link rel="stylesheet" href="css/libs/select2.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <!-- custom css start -->
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/mapmarker.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8e6d2c76-6c60-443b-9682-34d70315a8d3&lang=ru_RU"
+      type="text/javascript">
+    </script>
+    <!-- custom css end -->
+</head>
+<body>
+  <!-- Header start -->
+  <header class="headerWrapper">
+    <div class="container-fluid px-0" style="height: 100%;">
+      <div class="d-flex align-items-center justify-content-between" style="height: 100%">
+        <div class="blockForLogo">
+          <a href="index.html">
+            <img src="img/LogoDark.png" alt="">
+          </a>
+        </div>
+        <nav class="navbar navbar-expand-xl navbar-light pb-0" style="height: 100%">
+          <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburgerForNav"></span>
+          </button>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <button type="button" class="close navbarCloseButton">
+              <span>&times;</span>
+            </button>
+            <ul class="navbar-nav mr-auto align-items-center">
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <button type="button" class="btn btn-default withoutEffect" data-toggle="modal"
+                  data-target="#directionsModal">Направления</button>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="tariffs.html">Тарифы</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="advantages.html">Приемущество</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="opportunities.html">Возможности</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="contacts.html">Контакты</a>
+              </li>
+              <li class="nav-item active h-100 d-flex">
+                <button type="button" class="btn btn-default demoAccesHeartBeat" data-toggle="modal"
+                  data-target="#exampleModal2" id="demoBlurEffect">
+                  Получить демо доступ
+                </button>
+              </li>
+              <li class="hamburgerNumber">
+                <span> +998 93 544 11 10</span>
+                <span> +998 93 544 11 10</span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="contactNumbers d-flex flex-column align-items-center">
+          <div>+998 93 544 11 10</div>
+          <div>+998 93 544 11 10</div>
+        </div>
+        <div class="numbersForresponsive">
+          <button class="numbersListOpen">
+            <i class="flaticon-call-answer"></i>
+          </button>
+          <ul class="respNumbersList">
+            <li class="respNumbersListDetails">+998 93 544 11 10</li>
+            <li class="respNumbersListDetails">+998 93 544 11 10</li>
+          </ul>
+        </div>
+        <div class="forLanguages d-flex align-items-center">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle headerBtnEffect" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              RU
+            </button>
+            <div class="dropdown-menu" id="otherLanguages" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">UZB</a>
+              <a class="dropdown-item" href="#">ENG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header end -->
+  <div class="container-fluid position-absolute pl-0 otherBreadcrumbs">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb pl-1">
+        <li class="breadcrumb-item" style="font-size: 14px;"><a href="index.html"
+            class="text-white text-decoration-none" id="tab--item--main"><i class="flaticon-home"></i></a></li>
+        <li class="breadcrumb-item" style="font-size: 14px;"><a class="text-white text-decoration-none"
+            id="tab--item--main">Тариф</a></li>
+        <li class="breadcrumb-item active" aria-current="page"
+          style="color: #7f8a94; font-size: 14px;">Обшая информация</li>
+      </ol>
+    </nav>
+  </div>
+  <div id="tariffs" class="fullpageBlock withSimilarBg pt-5">
+    <div class="section mainTariffs" style="background-image: url(img/bgi2.jpg)">      
+      <div class="container d-flex align-items-center h-100 pl-0" id="ulugbekTariff">
+        <div class="tabsWrapper w-100">          
+          <div class="tab w-100 d-flex flex-column justify-content-around">
+            <div class="tab_iconsList">
+              <div class="tabs d-flex justify-content-between" id="tarif--items-list">
+                <div class="tab-btn active" data-tab="tab-1">
+                  <div class="tarifNewImg">
+                    <img src="img/newImg/tarif1.png" alt="">
+                  </div>
+                  <span>«Базовый»</span>
+                  <div>500 000 sum</div>
+                </div>
+                <div class="tab-btn" data-tab="tab-2">
+                  <div class="tarifNewImg">
+                    <img src="img/newImg/tarif2.png" alt="">
+                  </div>
+                  <span>«Актив»</span>
+                  <div>1 500 000 sum</div>
+                </div>
+                <div class="tab-btn" data-tab="tab-3">
+                  <div class="tarifNewImg">
+                    <img src="img/newImg/tarif3.png" alt="">
+                  </div>
+                  <span>«Премиум»</span>
+                  <div>2 500 000 sum</div>
+                </div>
+                <div class="tab-btn" data-tab="tab-4">
+                  <div class="tarifNewImg">
+                    <img src="img/newImg/tarif1.png" alt="">
+                  </div>
+                  <span>«Премиум + »</span>
+                  <div>3 500 000 sum</div>
+                </div>
+                <div class="tab-btn" data-tab="tab-5">
+                  <div class="tarifNewImg">
+                    <img src="img/newImg/tarif2.png" alt="">
+                  </div>
+                  <span>«Голд»</span>
+                  <div>5 500 000 sum</div>
+                </div>
+              </div>
+            </div>
+            <div class="tab_content">
+              <div data-tab-item="tab-1" class="tabs_item position-relative active">
+                <div class="flex-wrapper d-flex justify-content-between">
+                  <div class="h-100 d-flex flex-column align-items-center tabItemNewStyle">
+                    <h3>Тариф <span>«Базовый»</span></h3>
+                    <span style="text-align: center">Самый доступный, недорогой <br> и экономный. Далеко-далеко за
+                      словесными горами в стране гласных и согласных большой одна. Несколько, текстами за.</span> <br>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#connectTarifFormModal"
+                      id="connectTarif">Подключить</button>
+                  </div>
+                  <div class="wrapperRight position-relative">
+                    <div class="tariffsOptions position-absolute d-flex flex-wrap">
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>2 собственных юрлица</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Поддержка маркировки</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>500 МБ для хранения файлов</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Есть собственных шаблонов</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Подключение дополнительных опций</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Управление правами пользователей</span>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>                
+              </div> 
+              <div data-tab-item="tab-2" class="tabs_item position-relative">
+                <div class="flex-wrapper d-flex justify-content-between">
+                  <div class="h-100 d-flex flex-column align-items-center tabItemNewStyle">
+                    <h3>Тариф <span>«Актив»</span></h3>
+                    <span style="text-align: center">Самый доступный, недорогой <br> и экономный. Далеко-далеко за
+                      словесными горами в стране гласных и согласных большой одна. Несколько, текстами за.</span> <br>
+                    <button type="button" class="btn btn-info" id="connectTarif">Подключить</button>
+                  </div>
+                  <div class="wrapperRight position-relative">
+                    <div class="tariffsOptions position-absolute d-flex flex-wrap">
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>3 собственных юрлица</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Поддержка маркировки</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>500 МБ для хранения файлов</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Есть собственных шаблонов</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Подключение дополнительных опций</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Управление правами пользователей</span>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+              </div> 
+              <div data-tab-item="tab-3" class="tabs_item position-relative">
+                <div class="flex-wrapper d-flex justify-content-between">
+                  <div class="h-100 d-flex flex-column align-items-center tabItemNewStyle">
+                    <h3>Тариф <span>«Премиум»</span></h3>
+                    <span style="text-align: center">Самый доступный, недорогой <br> и экономный. Далеко-далеко за
+                      словесными горами в стране гласных и согласных большой одна. Несколько, текстами за.</span> <br>
+                    <button type="button" class="btn btn-info" id="connectTarif">Подключить</button>
+                  </div>
+                  <div class="wrapperRight position-relative">
+                    <div class="tariffsOptions position-absolute d-flex flex-wrap">
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>5 собственных юрлица</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Поддержка маркировки</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>500 МБ для хранения файлов</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Есть собственных шаблонов</span>
+                      </div>
+                      
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Подключение дополнительных опций</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Управление правами пользователей</span>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+              </div> 
+              <div data-tab-item="tab-4" class="tabs_item position-relative">
+                <div class="flex-wrapper d-flex justify-content-between">
+                  <div class="h-100 d-flex flex-column align-items-center tabItemNewStyle">
+                    <h3>Тариф <span>«Премиум плюс»</span></h3>
+                    <span style="text-align: center">Самый доступный, недорогой <br> и экономный. Далеко-далеко за
+                      словесными горами в стране гласных и согласных большой одна. Несколько, текстами за.</span> <br>
+                    <button type="button" class="btn btn-info" id="connectTarif">Подключить</button>
+                  </div>
+                  <div class="wrapperRight position-relative">
+                    <div class="tariffsOptions position-absolute d-flex flex-wrap">
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>6 собственных юрлица</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>500 МБ для хранения файлов</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Есть собственных шаблонов</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Поддержка маркировки</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Подключение дополнительных опций</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Управление правами пользователей</span>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+              </div> 
+              <div data-tab-item="tab-5" class="tabs_item position-relative">
+                <div class="flex-wrapper d-flex justify-content-between">
+                  <div class="h-100 d-flex flex-column align-items-center tabItemNewStyle">
+                    <h3>Тариф <span>«Голд»</span></h3>
+                    <span style="text-align: center">Самый доступный, недорогой <br> и экономный. Далеко-далеко за
+                      словесными горами в стране гласных и согласных большой одна. Несколько, текстами за.</span> <br>
+                    <button type="button" class="btn btn-info" id="connectTarif">Подключить</button>
+                  </div>
+                  <div class="wrapperRight position-relative">
+                    <div class="tariffsOptions position-absolute d-flex flex-wrap">
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>7 собственных юрлица</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>500 МБ для хранения файлов</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Есть собственных шаблонов</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Поддержка маркировки</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Подключение дополнительных опций</span>
+                      </div>
+                      <div class="tarifOptionDetails">
+                        <i class="flaticon-tick-inside-a-circle align-top"></i>
+                        <span>Управление правами пользователей</span>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+              </div> 
+            </div> 
+          </div>           
+        </div>
+      </div>
+    </div>
+    <div class="section additionalOptions" style="background-image: url(img/bgi2.jpg)">
+      <div class="container-fluid h-100 d-flex align-items-center pl-0" style="padding-top: 8vh;">
+        <div class="container pl-0 ml-0">
+          <div class="addOptionsTitle text-center mb-5">
+            <h3>
+              <i class="flaticon-round-add-button-1"></i>
+              Дополнительные опции
+            </h3>
+            <p class="addOptionsSubTitle">
+              Доступы на всех тарифах, кроме бесплатного и пакета "Старт"
+            </p>
+          </div>
+          <div class="owl-carousel owl-theme" id="addOptionsCarousel">
+            <div class="item">
+              <div class="optionWrapper">
+                <div class="optionIllustration">
+                  <img src="img/demoOption.png" alt="">
+                </div>
+                <div class="optionDetails">
+                  <p class="optionTitle">
+                    Дополнительный  сотрудник
+                  </p>
+                  <div class="optionPrice">
+                    250 000 СУМ
+                  </div>
+                  <span class="optionDeadLine">
+                    в месяц
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="optionWrapper">
+                <div class="optionIllustration">
+                  <img src="img/demoOption.png" alt="">
+                </div>
+                <div class="optionDetails">
+                  <p class="optionTitle">
+                    Дополнительный 1MБ  <br>
+                    для хранения файлов
+                  </p>
+                  <div class="optionPrice">
+                    10 000 СУМ
+                  </div>
+                  <span class="optionDeadLine">
+                    в месяц
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="optionWrapper">
+                <div class="optionIllustration">
+                  <img src="img/demoOption.png" alt="">
+                </div>
+                <div class="optionDetails">
+                  <p class="optionTitle">
+                    Поддержка маркировки
+                  </p>
+                  <div class="optionPrice">
+                    150 000 СУМ
+                  </div>
+                  <span class="optionDeadLine">
+                    в месяц
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="optionWrapper">
+                <div class="optionIllustration">
+                  <img src="img/demoOption.png" alt="">
+                </div>
+                <div class="optionDetails">
+                  <p class="optionTitle">
+                    CRM <br>
+                    управления клиентами
+                  </p>
+                  <div class="optionPrice">
+                    1 500 000 СУМ
+                  </div>
+                  <span class="optionDeadLine">
+                    в месяц
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="optionWrapper">
+                <div class="optionIllustration">
+                  <img src="img/demoOption.png" alt="">
+                </div>
+                <div class="optionDetails">
+                  <p class="optionTitle">
+                    Дополнительный  сотрудник
+                  </p>
+                  <div class="optionPrice">
+                    300 000 СУМ
+                  </div>
+                  <span class="optionDeadLine">
+                    в месяц
+                  </span>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section discounts" style="background-image: url(img/parallax-3.jpg);">
+      <div class="container-fluid h-100 d-flex align-items-center pl-0" style="padding-top: 8vh">
+        <div class="container pl-0 ml-0">
+          <div class="row m-0 align-items-center">
+            <div class="col-lg-4 col-md-12 leftSideDiscount">
+              <div class="discountTitle">
+                <h3>
+                  <i class="flaticon-discount"></i>
+                  СКИДКИ.
+                </h3>
+                <p>
+                  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                </p>
+                <div class="discountIllustration d-none">
+                  <img src="img/discount.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-12 discountsColumn">
+              <div class="alldiscountsListWrapper">
+                <div class="discounts-details clearfix">
+                  <div class="discountPercent">
+                    <img src="img/sales-bg.svg" alt="">
+                    <span>10 %</span>
+                  </div>
+                  <div class="discountTetle">
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. На берегу моей
+                    парадигматическая строчка что взобравшись заглавных ipsum, точках всеми.
+                  </div>
+                </div>
+              </div>
+              <div class="discountWhiteLine my-3"></div>
+              <div class="alldiscountsListWrapper">
+                <div class="discounts-details clearfix">
+                  <div class="discountPercent">
+                    <img src="img/sales-bg.svg" alt="">
+                    <span>15 %</span>
+                  </div>
+                  <div class="discountTetle">
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. На берегу моей
+                    парадигматическая строчка что взобравшись заглавных ipsum, точках всеми.
+                  </div>
+                </div>
+              </div>
+              <div class="discountWhiteLine my-3"></div>
+              <div class="alldiscountsListWrapper">
+                <div class="discounts-details clearfix">
+                  <div class="discountPercent">
+                    <img src="img/sales-bg.svg" alt="">
+                    <span>25 %</span>
+                  </div>
+                  <div class="discountTetle">
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. На берегу моей
+                    парадигматическая строчка что взобравшись заглавных ipsum, точках всеми.
+                  </div>
+                </div>
+              </div>
+              <div class="discountWhiteLine my-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section faqSection" style="background-image: url(img/bgi2.jpg);">
+      <div class="container-fluid d-flex align-items-center h-100 pl-0" style="padding-top: 8vh;">
+        <div class="owl-carousel owl-theme" id="faqCarousel">
+          <div class="container h-100 pl-0 ml-0 d-flex flex-column justify-content-evenly">
+            <div class="row align-items-start">
+              <div class="col-lg-4 col-sm-12">
+                <div class="faqTitleWrapper d-flex">
+                  <i class="flaticon-information"></i>
+                  <h3 class="faq-title">
+                    Далеко-далеко за, словесными горами в стране гласных
+                  </h3>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12 align-self-start">            
+                <p>
+                  Остатки: фактические и с учетом резерва и ожидания. Характеристики товара, штрих-коды и серийные
+                  номера. Комплекты. Адресное хранение. Импорт накладных и прайс-листов поставщиков из Excel. Импорт из
+                  систем ЭДО. История закупок по товару и по контрагенту. Работа с комиссионным товаром. Планирование
+                  закупок: заказы поставщикам на основе статистики продаж, автопополнение склада до неснижаемого
+                  остатка. Для дропшиппинга: создание заказов поставщикам из заказов покупателей. Уведомления о том, что
+                  товар заканчивается, 
+                </p>
+              </div>
+              
+            </div>
+            <div class="middleWhiteLine"></div>
+            <div class="row align-items-start">
+              <div class="col-lg-4 col-sm-12">
+                <div class="faqTitleWrapper d-flex">
+                  <i class="flaticon-information"></i>
+                  <h3 class="faq-title">
+                    Далеко-далеко за, словесными горами в стране гласных
+                  </h3>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12 align-self-start">           
+                <p>
+                  Остатки: фактические и с учетом резерва и ожидания. Характеристики товара, штрих-коды и серийные
+                  номера. Комплекты. Адресное хранение. Импорт накладных и прайс-листов поставщиков из Excel. Импорт из
+                  систем ЭДО. История закупок по товару и по контрагенту. Работа с комиссионным товаром. Планирование
+                  закупок: заказы поставщикам на основе статистики продаж, автопополнение склада до неснижаемого
+                  остатка. Для дропшиппинга: создание заказов поставщикам из заказов покупателей. Уведомления о том, что
+                  товар заканчивается, 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container h-100 pl-0 ml-0 d-flex flex-column justify-content-evenly">
+            <div class="row align-items-start">
+              <div class="col-lg-4 col-sm-12">
+                <div class="faqTitleWrapper d-flex">
+                  <i class="flaticon-information"></i>
+                  <h3 class="faq-title">
+                    Далеко-далеко за, словесными горами в стране гласных
+                  </h3>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12 align-self-start">            
+                <p>
+                  Остатки: фактические и с учетом резерва и ожидания. Характеристики товара, штрих-коды и серийные
+                  номера. Комплекты. Адресное хранение. Импорт накладных и прайс-листов поставщиков из Excel. Импорт из
+                  систем ЭДО. История закупок по товару и по контрагенту. Работа с комиссионным товаром. Планирование
+                  закупок: заказы поставщикам на основе статистики продаж, автопополнение склада до неснижаемого
+                  остатка. Для дропшиппинга: создание заказов поставщикам из заказов покупателей. Уведомления о том, что
+                  товар заканчивается, 
+                </p>
+              </div>
+              
+            </div>
+            <div class="middleWhiteLine"></div>
+            <div class="row align-items-start">
+              <div class="col-lg-4 col-sm-12">
+                <div class="faqTitleWrapper d-flex">
+                  <i class="flaticon-information"></i>
+                  <h3 class="faq-title">
+                    Далеко-далеко за, словесными горами в стране гласных
+                  </h3>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12 align-self-start">           
+                <p>
+                  Остатки: фактические и с учетом резерва и ожидания. Характеристики товара, штрих-коды и серийные
+                  номера. Комплекты. Адресное хранение. Импорт накладных и прайс-листов поставщиков из Excel. Импорт из
+                  систем ЭДО. История закупок по товару и по контрагенту. Работа с комиссионным товаром. Планирование
+                  закупок: заказы поставщикам на основе статистики продаж, автопополнение склада до неснижаемого
+                  остатка. Для дропшиппинга: создание заказов поставщикам из заказов покупателей. Уведомления о том, что
+                  товар заканчивается, 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container h-100 pl-0 ml-0 d-flex flex-column justify-content-evenly">
+            <div class="row align-items-start">
+              <div class="col-lg-4 col-sm-12">
+                <div class="faqTitleWrapper d-flex">
+                  <i class="flaticon-information"></i>
+                  <h3 class="faq-title">
+                    Далеко-далеко за, словесными горами в стране гласных
+                  </h3>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12 align-self-start">            
+                <p>
+                  Остатки: фактические и с учетом резерва и ожидания. Характеристики товара, штрих-коды и серийные
+                  номера. Комплекты. Адресное хранение. Импорт накладных и прайс-листов поставщиков из Excel. Импорт из
+                  систем ЭДО. История закупок по товару и по контрагенту. Работа с комиссионным товаром. Планирование
+                  закупок: заказы поставщикам на основе статистики продаж, автопополнение склада до неснижаемого
+                  остатка. Для дропшиппинга: создание заказов поставщикам из заказов покупателей. Уведомления о том, что
+                  товар заканчивается, 
+                </p>
+              </div>
+              
+            </div>
+            <div class="middleWhiteLine"></div>
+            <div class="row align-items-start">
+              <div class="col-lg-4 col-sm-12">
+                <div class="faqTitleWrapper d-flex">
+                  <i class="flaticon-information"></i>
+                  <h3 class="faq-title">
+                    Далеко-далеко за, словесными горами в стране гласных
+                  </h3>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12 align-self-start">           
+                <p>
+                  Остатки: фактические и с учетом резерва и ожидания. Характеристики товара, штрих-коды и серийные
+                  номера. Комплекты. Адресное хранение. Импорт накладных и прайс-листов поставщиков из Excel. Импорт из
+                  систем ЭДО. История закупок по товару и по контрагенту. Работа с комиссионным товаром. Планирование
+                  закупок: заказы поставщикам на основе статистики продаж, автопополнение склада до неснижаемого
+                  остатка. Для дропшиппинга: создание заказов поставщикам из заказов покупателей. Уведомления о том, что
+                  товар заканчивается, 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+  <div class="fixRightSideBar tariffs sideBarResponsive">
+    <button class="openSideBarBtn">Доп.инфо</button>
+    <div class="featuresWrapper d-flex flex-column align-items-center ">
+      <div class="featuresDetails mt-5 px-5 d-flex flex-column justify-content-start align-self-start">
+        <h3 class="featuresTitle mb-4">Тарифы для вашего <br> бизнеса</h3>
+        <p>
+          Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Реторический рыбными даль свою скатился.
+        </p>
+        <div class="bind-btns-to-fullpage">
+          <span class="btn btn-outline-success btn-block mb-4 usualShow activeFeature">Тарифы</span>
+          <span class="btn btn-outline-success btn-block mb-4 usualShow">Дополнительные опции</span>
+          <span class="btn btn-outline-success btn-block mb-4 usualShow">Скидки</span>
+          <span class="btn btn-outline-success btn-block mb-4 usualShow">Ответы на вопросы</span>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- JS Libs start -->
+  <script src="js/jquery-3.4.0.min.js"></script>
+  <script src="js/libs/popper.min.js"> </script>
+  <script src="js/libs/bootstrap.min.js"></script>
+  <script src="js/libs/hammer.min.js"></script>
+  <script src="js/libs/intlTelInput.min.js"></script>
+  <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
+  <script src="js/vendors/scrolloverflow.min.js"></script>
+  <script src="js/libs/jquery.fullpage.js"></script>
+  <script src="js/libs/jquery.mousewheel.min.js"></script>
+  <script src="js/libs/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/libs/select2.min.js"></script>
+  <script src="js/libs/select2-searchInputPlaceholder.js"></script>
+  <!-- custom js start  -->
+  <script src="js/slider.js"></script>
+  <script src="js/common.js"></script>
+
+  <!-- custom js  -->
+
+
+
+
+  <div class="modal fade" id="connectTarifFormModal" tabindex="-1" role="dialog" aria-labelledby="tarifConnectModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+      <div class="modal-content">
+        <div class="modal-header mx-3 justify-content-center align-items-center">
+          <h5 class="modal-title" id="tarifConnectModal">Напишите ваши данные</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body pb-0">
+          <div class="modalLogoBlock">
+            <img src="img/LogoDark.png" alt="">
+          </div>
+          <form class="d-flex flex-wrap justify-content-between">
+            <div class="form-group ">
+              <label for="recipient-name" class="col-form-label">Имя:</label>
+              <input type="text" class="form-control" id="recipient-name" placeholder="Javlon">
+            </div>
+            <div class="form-group">
+              <label for="recipient-surename" class="col-form-label">Фамилия:</label>
+              <input type="text" class="form-control" id="recipient-surename" placeholder="Abdullayev">
+            </div>
+            <div class="form-group" id="inputForPhone">
+              <label for="clientPhoneNumber" class="col-form-label">Номер телефона:</label> <br>
+              <input type="phone" class="form-control" id="clientPhoneNumber">
+            </div>
+            <div class="form-group" id="inputForTelegram">
+              <label for="clientTelegram" class="col-form-label">Telegram:</label> <br>
+              <input type="telegram" class="form-control" id="clientTelegram">
+            </div>
+            <div class="form-group w-100">
+              <label for="recipient-firm" class="col-form-label">Ваша организация:</label>
+              <input type="text" class="form-control" id="recipient-firm" placeholder="ООО 'BrandIndustry'">
+            </div>
+            <div class="form-group w-100">
+              <label for="chooseFirmType" class="col-form-label">
+                Выберите вашу тип предприятию или напишите:
+              </label>
+              <select class="form-control" id="chooseFirmType" style="width: 504px;">
+                <option selected="selected">Производство</option>
+                <option>Сфера Услуг</option>
+                <option>Оптовая торговля</option>
+                <option>Розничная торговля</option>
+              </select>
+            </div>
+            <div class="form-group mb-0 w-100">
+              <label for="message-text" class="col-form-label">Ваша Сообшения:</label>
+              <textarea class="form-control" id="message-text" style="height: 140px;"
+                placeholder="Ваша Сообшения"></textarea>
+            </div>
+            <button type="button" class="btn btn-block btn-primary my-4">Получить</button>
+          </form>
+          <div class="socialNetworks d-flex justify-content-center align-items-center">
+            <a href="#" class="socialsDetails"><i class="flaticon-telegram"></i></a>
+            <a href="#" class="socialsDetails"><i class="flaticon-facebook"></i></a>
+            <a href="#" class="socialsDetails"><i class="flaticon-instagram"></i></a>
+            <a href="#" class="socialsDetails"><i class="flaticon-google-plus"></i></a>
+          </div>
+        </div>
+        <div class="modal-footer text-center mx-3 justify-content-center align-items-center">
+          <span style="font-size: 15px;">&copy GOOD ONE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

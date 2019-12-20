@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GOCRM</title>
+    <link rel="icon" href="img/icon.png">
+    <!-- css libs start -->
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/slider.style.css">
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/libs/fullpage.min.css">
+    <link rel="stylesheet" href="css/libs/select2.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <!-- custom css start -->
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/mapmarker.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8e6d2c76-6c60-443b-9682-34d70315a8d3&lang=ru_RU"
+      type="text/javascript">
+    </script>
+    <!-- custom css end -->
+</head>
+<body>
+  <!-- Header start -->
+  <header class="headerWrapper">
+    <div class="container-fluid px-0" style="height: 100%;">
+      <div class="d-flex align-items-center justify-content-between" style="height: 100%">
+        <div class="blockForLogo">
+          <a href="index.html">
+            <img src="img/LogoDark.png" alt="">
+          </a>
+        </div>
+        <nav class="navbar navbar-expand-xl navbar-light pb-0" style="height: 100%">
+          <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburgerForNav"></span>
+          </button>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <button type="button" class="close navbarCloseButton">
+              <span>&times;</span>
+            </button>
+            <ul class="navbar-nav mr-auto align-items-center">
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <button type="button" class="btn btn-default withoutEffect" data-toggle="modal"
+                  data-target="#directionsModal">Направления</button>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="tariffs.html">Тарифы</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="advantages.html">Приемущество</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="opportunities.html">Возможности</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="contacts.html">Контакты</a>
+              </li>
+              <li class="nav-item active h-100 d-flex">
+                <button type="button" class="btn btn-default demoAccesHeartBeat" data-toggle="modal"
+                  data-target="#exampleModal2" id="demoBlurEffect">
+                  Получить демо доступ
+                </button>
+              </li>
+              <li class="hamburgerNumber">
+                <span>  +998 93 544 11 10</span>
+                <span>  +998 93 544 11 10</span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="contactNumbers d-flex flex-column align-items-center">
+          <div>+998 93 544 11 10</div>
+          <div>+998 93 544 11 10</div>
+        </div>
+        <div class="numbersForresponsive">
+          <button class="numbersListOpen">
+            <i class="flaticon-call-answer"></i>
+          </button>
+          <ul class="respNumbersList">
+            <li class="respNumbersListDetails">+998 93 544 11 10</li>
+            <li class="respNumbersListDetails">+998 93 544 11 10</li>
+          </ul>
+        </div>
+        <div class="forLanguages d-flex align-items-center">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle headerBtnEffect" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              RU
+            </button>
+            <div class="dropdown-menu" id="otherLanguages" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">UZB</a>
+              <a class="dropdown-item" href="#">ENG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header end -->
+  <div class="container-fluid position-absolute pl-0 otherBreadcrumbs">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb pl-1">
+        <li class="breadcrumb-item" style="font-size: 14px;"><a href="index.html"
+            class="text-white text-decoration-none" id="tab--item--main"><i class="flaticon-homepage"></i></a></li>
+        <li class="breadcrumb-item" style="font-size: 14px;"><a class="text-white text-decoration-none"
+            id="tab--item--main">Возможности</a></li>
+        <li class="breadcrumb-item active" aria-current="page"
+          style="color: #7f8a94; font-size: 14px;">Обшая информация</li>
+      </ol>
+    </nav>
+  </div>
+  <div id="featuresBlock" class="fullpageBlock pt-5 withSimilarBg advantages">
+    <div class="section" style="background-image: url(img/bgi2.jpg);">
+      <div class="container-fluid h-100 d-flex flex-column justify-content-center">
+        <div class="row mb-5">
+          <div class="col-md-9 titleColumn">
+            <h1 class="advantagesTitle text-center">
+              Закупки и складской учет
+            </h1>
+            <p class="advSubTitle text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, nobis.
+            </p>            
+          </div>
+        </div>
+        <div class="row">          
+          <div class="col-xl-4 col-lg-4 col-md-12 advImg">
+            <div class="forFeaturesImg">
+              <img src="img/f1.png" alt="" class="w-100">
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-8 col-md-12 advInfo">
+            <div class="forFeaturesInfo">
+              <p>
+                Остатки: фактические и с учетом резерва и ожидания. Характеристики товара, штрих-коды и серийные
+                номера. Комплекты. Адресное хранение. Импорт накладных и прайс-листов поставщиков из Excel. Импорт из
+                систем ЭДО. История закупок по товару и по контрагенту. Работа с комиссионным товаром. Планирование
+                закупок: заказы поставщикам на основе статистики продаж, автопополнение склада до неснижаемого
+                остатка. Для дропшиппинга: создание заказов поставщикам из заказов покупателей. Уведомления о том, что
+                товар заканчивается, о новых или не отгруженных заказах, неоплаченных счетах: во всех браузерах, в
+                ленте новостей и в мобильных приложениях. Поддержка маркировки: заказ и печать кодов, приемка
+                маркированных товаров.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="down-section scrol-flex flex-column align-items-center whiteMouseDown d-none d-xl-block">
+        <span></span>
+        <span class="mouse-icon inner-link btnNext">
+          <span></span>
+        </span>
+      </div>
+    </div>
+    <div class="section" style="background-image: url(img/bgi2.jpg);">
+      <div class="container-fluid h-100 d-flex flex-column justify-content-center">
+        <div class="row mb-5">
+          <div class="col-md-9 titleColumn">
+            <h1 class="advantagesTitle text-center">
+              Закупки и складской учет
+            </h1>
+            <p class="advSubTitle text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, nobis.
+            </p>            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-12 advImg">
+            <div class="forFeaturesImg">
+              <img src="img/f1.png" alt="" class="w-100">
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-8 col-md-12 advInfo">
+            <div class="forFeaturesInfo">
+              <p>
+                Остатки: фактические и с учетом резерва и ожидания. Характеристики товара, штрих-коды и серийные
+                номера. Комплекты. Адресное хранение. Импорт накладных и прайс-листов поставщиков из Excel. Импорт из
+                систем ЭДО. История закупок по товару и по контрагенту. Работа с комиссионным товаром. Планирование
+                закупок: заказы поставщикам на основе статистики продаж, автопополнение склада до неснижаемого
+                остатка. Для дропшиппинга: создание заказов поставщикам из заказов покупателей. Уведомления о том, что
+                товар заканчивается, о новых или не отгруженных заказах, неоплаченных счетах: во всех браузерах, в
+                ленте новостей и в мобильных приложениях. Поддержка маркировки: заказ и печать кодов, приемка
+                маркированных товаров.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" style="background-image: url(img/bgi2.jpg);">
+      <div class="container-fluid h-100 d-flex flex-column justify-content-center">
+        <div class="row mb-5">
+          <div class="col-md-9 titleColumn">
+            <h1 class="advantagesTitle text-center">
+              Закупки и складской учет
+            </h1>
+            <p class="advSubTitle text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, nobis.
+            </p>            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-12 advImg">
+            <div class="forFeaturesImg">
+              <img src="img/f1.png" alt="" class="w-100">
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-8 col-md-12 advInfo">
+            <div class="forFeaturesInfo">
+              <p>
+                Остатки: фактические и с учетом резерва и ожидания. Характеристики товара, штрих-коды и серийные
+                номера. Комплекты. Адресное хранение. Импорт накладных и прайс-листов поставщиков из Excel. Импорт из
+                систем ЭДО. История закупок по товару и по контрагенту. Работа с комиссионным товаром. Планирование
+                закупок: заказы поставщикам на основе статистики продаж, автопополнение склада до неснижаемого
+                остатка. Для дропшиппинга: создание заказов поставщикам из заказов покупателей. Уведомления о том, что
+                товар заканчивается, о новых или не отгруженных заказах, неоплаченных счетах: во всех браузерах, в
+                ленте новостей и в мобильных приложениях. Поддержка маркировки: заказ и печать кодов, приемка
+                маркированных товаров.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" style="background-image: url(img/bgi2.jpg);">
+      <div class="container-fluid h-100 d-flex flex-column justify-content-center">
+        <div class="row mb-5">
+          <div class="col-md-9 titleColumn">
+            <h1 class="advantagesTitle text-center">
+              Закупки и складской учет
+            </h1>
+            <p class="advSubTitle text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, nobis.
+            </p>            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-12 advImg">
+            <div class="forFeaturesImg">
+              <img src="img/f1.png" alt="" class="w-100">
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-8 col-md-12 advInfo">
+            <div class="forFeaturesInfo">
+              <p>
+                Остатки: фактические и с учетом резерва и ожидания. Характеристики товара, штрих-коды и серийные
+                номера. Комплекты. Адресное хранение. Импорт накладных и прайс-листов поставщиков из Excel. Импорт из
+                систем ЭДО. История закупок по товару и по контрагенту. Работа с комиссионным товаром. Планирование
+                закупок: заказы поставщикам на основе статистики продаж, автопополнение склада до неснижаемого
+                остатка. Для дропшиппинга: создание заказов поставщикам из заказов покупателей. Уведомления о том, что
+                товар заканчивается, о новых или не отгруженных заказах, неоплаченных счетах: во всех браузерах, в
+                ленте новостей и в мобильных приложениях. Поддержка маркировки: заказ и печать кодов, приемка
+                маркированных товаров.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fixRightSideBar advSideBar sideBarResponsive">
+    <button class="openSideBarBtn">Доп.инфо</button>
+    <div class="featuresWrapper d-flex flex-column align-items-center ">
+      <div class="featuresDetails mt-5 px-5 d-flex flex-column justify-content-start align-self-start">
+        <h3 class="featuresTitle mb-4">Приемущество</h3>
+        <p>
+          Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Реторический рыбными даль свою скатился.
+        </p>
+        <div class="bind-btns-to-fullpage">
+          <span class="btn btn-outline-success btn-block mb-4 usualShow activeFeature">Приемущество 1</span>
+          <span class="btn btn-outline-success btn-block mb-4 usualShow">Приемущество 2</span>
+          <span class="btn btn-outline-success btn-block mb-4 usualShow">Приемущество 3</span>
+          <span class="btn btn-outline-success btn-block mb-4 usualShow">Приемущество 4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- JS Libs start -->
+  <script src="js/jquery-3.4.0.min.js"></script>
+  <script src="js/libs/popper.min.js"> </script>
+  <script src="js/libs/bootstrap.min.js"></script>
+  <script src="js/libs/hammer.min.js"></script>
+  <script src="js/libs/intlTelInput.min.js"></script>
+  <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
+  <script src="js/vendors/scrolloverflow.min.js"></script>
+  <script src="js/libs/jquery.fullpage.js"></script>
+  <script src="js/libs/jquery.mousewheel.min.js"></script>
+  <script src="js/libs/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/libs/select2.min.js"></script>
+  <script src="js/libs/select2-searchInputPlaceholder.js"></script>
+  <!-- custom js start  -->
+  <script src="js/slider.js"></script>
+  <script src="js/common.js"></script>
+  <!-- custom js  -->
+</body>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Напишите ваши данные</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Имя:</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Javlon">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Фамилия:</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Abdullayev">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Ваша организация:</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="ООО 'BrandIndustry'">
+          </div>
+          <div class="pt-3">Выберите вашу тип предприятию</div>
+          <div class="custom-control custom-radio pt-3">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio1">Промышленность</label>
+          </div>
+          <div class="custom-control custom-radio pt-3">
+            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio3">Сферы услуг </label>
+          </div>
+          <div class="form-group mt-3">
+            <label for="message-text" class="col-form-label">Ваша Сообшения:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Получить</button>
+      </div>
+    </div>
+  </div>
+</div>
+</html>

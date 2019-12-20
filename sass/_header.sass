@@ -1,0 +1,183 @@
+.headerWrapper
+  height: 8vh
+  width: 100vw
+  position: fixed
+  z-index: 99999
+  background-color: #fff
+  box-shadow: 0px 0px 16px 0px #0000001c
+  .blockForLogo
+    font-size: 1.5em
+    font-weight: 600
+    position: relative
+    a
+      color: #364C69
+      text-decoration: none 
+      display: block
+      max-width: 130px
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      width: 1px
+      height: 60px
+      top: -8px
+      right: -38px
+      background-color: #7070703b
+      z-index: 1
+  nav.navbar .navbar-collapse
+    height: 100%
+  .navbarCloseButton
+    position: absolute
+    right: 10px
+    top: 5px
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    background-color: #ccc
+    display: none
+    &:focus
+      outline: none
+  ul
+    &.navbar-nav
+      height: 100%
+    li
+      margin-right: 1.3rem
+      *
+        color: #224b69 !important
+      &.nav-item.active.hb-border
+        border-bottom: 3px solid transparent
+        transition: all .5s ease
+        &:hover
+          border-bottom: 3px solid #224b69
+      &.nav-item.active.hb-border.activeBorder
+        border-bottom: 3px solid #224b69
+  .headerBtnEffect.focus, .headerBtnEffect:focus, .headerBtnEffect:hover
+    box-shadow: 0 0 0 0.15rem rgba(34,75,105, 1) !important
+    outline: none
+  .withoutEffect:focus
+    box-shadow: none !important
+  .demoAccesHeartBeat
+    height: 48px
+    margin-top: 9px
+    background-color: #16D719
+    color: #fff !important
+    // transform: scale(0.8)
+    &:focus
+      box-shadow: none
+    &:hover
+      background-color: #11a914
+      color: #fff !important
+  .contactNumbers
+    position: relative
+    margin-right: 1.2vw
+    *
+      color: #224b69
+    &::after
+      content: ""
+      display: block
+      position: absolute
+      width: 1px
+      height: 60px
+      top: -8px
+      right: -5.3vw
+      background-color: #7070703b
+      z-index: 1
+  .numbersForresponsive
+    position: relative
+    display: none
+    .numbersListOpen
+      background-color: transparent
+      border: none
+      outline: none
+      i::before
+        font-size: 2rem
+      &:focus, &:active, &:hover
+        box-shadow: 0 0 0 0.15rem #224b69 !important
+        border-radius: 6px
+    .respNumbersList
+      list-style: none
+      padding: 15px
+      width: 185px
+      margin: 0
+      position: absolute
+      top: 0
+      right: -25px
+      background-color: #fff
+      border-radius: 6px
+      transform: translate3d(0px, 0px, 0px) !important
+      opacity: 0
+      transition: all .5s ease-in-out
+      z-index: -99
+      &.showlist
+        opacity: 1
+        display: unset !important
+        transform: translate3d(0px, 67px, 0px) !important
+      .respNumbersListDetails
+        width: 140px
+        margin: auto
+  .hamburgerForNav
+    width: 30px
+    height: 2px
+    display: block
+    background-color: #224b69
+    position: relative  
+    // transition: transform .5s ease-in-out
+  .hamburgerForNav::before,
+  .hamburgerForNav::after
+    content: ''
+    width: 30px
+    height: 2px
+    background-color: #224b69
+    display: block
+    position: absolute
+    // transition: transform .5s linear, top 0s, bottom 0s
+    left: 0
+  .hamburgerForNav::before
+    top: -10px
+  .hamburgerForNav::after 
+    bottom: -10px
+  .navbar-toggler.closeHamburger
+    .hamburgerForNav
+      background-color: #fff
+    .hamburgerForNav::before
+      top: 0px
+      transform: rotate(45deg)
+    .hamburgerForNav::after 
+      bottom: 0px
+      transform: rotate(-45deg)
+  .forLanguages 
+    margin-right: -1.6rem    
+    #otherLanguages
+      border-radius: 6px
+      border: 0
+      margin-top: 23px
+      min-width: 4.5rem !important
+      transform: translate3d(0px, -48px, 0px) !important
+      opacity: 0
+      display: unset !important
+      transition: all .5s ease-in-out
+      z-index: -99
+      &.show
+        opacity: 1
+        display: unset !important
+        transform: translate3d(0px, 38px, 0px) !important
+      a.dropdown-item
+        padding: .25rem .25rem
+        text-align: center
+        position: relative
+        color: #515a6b85
+        transition: all .5s
+        &:hover
+          color: #212529
+        &:first-child::after
+          content: ""
+          display: block
+          position: absolute
+          bottom: 0
+          left: 17px
+          width: 40px
+          height: 1px
+          z-index: 1
+          background-color: #7070703b
+  .hamburgerNumber     
+    display: none

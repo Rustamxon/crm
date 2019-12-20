@@ -1,0 +1,880 @@
+// general styles start
+@import "fonts"
+.justify-content-evenly
+  justify-content: space-evenly !important
+body
+  font-family: "Montserrat-Regular", sans-serif
+  height: 100vh
+#preloader 
+  position: relative
+  left: 0
+  top: 0
+  z-index: 999
+  width: 100%
+  height: 100%
+  overflow: visible
+  background: #224b69
+.visible 
+  visibility: visible
+  opacity: 1
+  transition: opacity 2s linear
+.hidden 
+  visibility: hidden
+  opacity: 0
+  transition: visibility 0s 2s, opacity 2s linear
+.preloaderImgWrapper
+  position: relative
+.rotateO
+  animation: rotation 4s infinite linear
+  position: absolute
+  left: 50px
+  top: 25px
+  z-index: -2
+@keyframes rotation 
+  from
+    transform: rotate(0deg)
+  
+  to 
+    transform: rotate(359deg)
+body.bluredModal
+  header, .carouselWrapper , .section, .right-sideWrapper
+    filter: blur(2px)
+    transition: blur .5s ease-in-out
+img
+  max-width: 100%
+  height: auto
+  display: block
+.container-fluid
+  position: relative
+  z-index: 2
+// general styles end  
+@import "header"
+@import "rightSidebar"
+@import "modals"  
+.main-content
+  height: 100vh
+  width: 100vw
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center top
+  position: relative
+
+#fixRightSideBar
+  position: fixed
+  width: 28vw
+  height: 100vh
+  right: 0
+  top: 0  
+  background-color: rgba(255, 255, 255, 0.11)
+  .main-directions
+    margin-right: 12%
+    position: relative
+    z-index: 999999  
+    width: 75%
+    .card
+      border: none !important
+      button
+        border: none !important
+        text-decoration: none !important
+        color: #354B68
+        font-weight: 600
+        font-size: 18px
+        height: 3.4rem
+        &:hover
+          color: #000
+#exampleModal2
+  z-index: 99999
+  transition: opacity .4s linear 
+// First section start 
+.fp-tableCell
+  display: block
+#contactsPage 
+  .section
+    background-repeat: no-repeat
+    background-position: bottom right
+    background-size: cover
+    .callBackform
+      width: 100%
+      input:focus, input:hover
+        border-color: transparent !important
+        box-shadow: 0 0 0 0.1rem rgba(34,75,105, 1) !important
+      h3
+        font-size: 20px
+        color: #000
+        margin-bottom: 30px
+      .nameSurname
+        width: 48%
+        &:nth-child(2)
+          float: right
+        display: inline-block
+        margin-bottom: 15px
+      .otherInputs
+        margin-bottom: 15px
+      textarea
+        width: 100%
+        height: 145px
+        margin-bottom: 15px
+        &:focus, &:hover
+          border-color: transparent !important
+          box-shadow: 0 0 0 0.1rem rgba(34,75,105, 1) !important
+      button
+        background-color: #224B69
+        color: #fff
+        height: 40px
+        transition: all .3s ease-in-out
+        &:hover
+          background-color: #64c100 
+          border-color: #64c100 
+    .callbakcImg
+      img
+        height: 40vh
+        width: 100%
+        object-fit: contain
+.openSideBarBtn
+  display: none
+  position: absolute
+  width: 100px
+  top: 15vh
+  left: -100px
+  background-color: transparent
+  box-shadow: 0 0 0 0.1rem rgba(34,75,105, 1) !important
+  border-radius: 6px 0 0 6px
+  border: none
+  transition: all .5s linear
+  outline: none !important
+.scrol-flex 
+  position: absolute
+  z-index: 99
+  bottom: 16px
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  justify-content: space-around
+  width: 100%
+.btnPrew
+  display: none !important
+.mouse-icon 
+  border: 2px solid #224B69
+  border-radius: 13px
+  display: block
+  height: 44px
+  width: 24px
+  margin: 0 auto
+  margin-top: 20px
+  cursor: pointer
+.mouse-icon span   
+  animation-duration: 1.5s  
+  animation-fill-mode: both  
+  animation-iteration-count: infinite  
+  animation-name: downScroll
+  background: none repeat scroll 0 0 #224B69
+  border: 1px solid transparent
+  border-radius: 4px
+  display: block
+  height: 4px
+  margin: 6px auto
+  width: 4px
+.btnPrew 
+  border: 2px solid #fff
+  span 
+    background: #fff;
+    animation-duration: 1.5s
+    animation-fill-mode: both
+    animation-iteration-count: infinite
+    animation-name: upScroll
+.whiteMouseDown span
+  border-color: #fff
+  span
+    background-color: #fff
+@-webkit-keyframes downScroll 
+  from 
+    opacity: 1
+    -webkit-transform: translateY(0)
+            transform: translateY(0) 
+  to 
+    opacity: 0
+    -webkit-transform: translateY(20px)
+            transform: translateY(20px)  
+@keyframes downScroll 
+    from 
+      opacity: 1
+      -webkit-transform: translateY(0)
+              transform: translateY(0)
+    to 
+      opacity: 0
+      -webkit-transform: translateY(20px)
+              transform: translateY(20px)
+@-webkit-keyframes upScroll
+  from 
+    opacity: .2
+    -webkit-transform: translateY(20px)
+            transform: translateY(20px) 
+  to 
+    opacity: 1
+    -webkit-transform: translateY(0)
+            transform: translateY(0)  
+@keyframes scroll 
+    from 
+      opacity: .2
+      -webkit-transform: translateY(20px)
+              transform: translateY(20px)
+    to 
+      opacity: 1
+      -webkit-transform: translateY(0)
+              transform: translateY(0)
+.right-sideWrapper
+  width: 25%
+  padding-top: 11rem  
+  float: right
+  position: relative
+  height: 100%
+  z-index: 1
+  ul
+    list-style: none
+    padding-left: 0px
+    li
+      height: 3rem
+      padding: 13px 0
+      border-bottom: 1px solid #cccccc5c
+      transition: all .15s ease-in-out
+      a
+        color: #5d4d4d
+        text-decoration: none
+        transition: all .5s ease
+        font-weight: 500
+        padding-left: 30px
+      &:hover
+        background-color: #224b69
+        a
+          color: #fff
+  &::before
+    content: ""
+    width: 2px
+    height: 100vh
+    background-color: #d5dcdc00
+    position: absolute
+    z-index: 1
+    display: block
+    top: 0
+    left: 0
+  button
+    position: relative
+.left-sideWrapper
+  width: 75%
+  float: left
+  position: relative
+
+.directionsName
+  display: inline-block
+.directionsImg
+  width: 35px
+  display: inline-block
+.otherStyle
+  border-radius: 6px !important
+  button
+    box-shadow: 0px 8px 24px 0px rgba(0,0,0,0.1) !important
+    border-radius: 6px
+.mainPageElementsWrapper
+  margin-top: 29vh
+.heading_tittle
+  color: #fff
+  font-weight: 500
+  margin-bottom: 3.4rem
+.directionsLink
+  margin: 0 15px 15px 0
+  transition: all .5s ease
+  &:hover
+    background-color: #fff
+    color: #354B68
+.directionsLink, .blockForVideo
+  padding: 10px 15px
+  text-decoration: none !important
+  color: #fff
+  border: 1px solid #fff
+  border-radius: 6px
+  display: inline-block
+.blockForVideo
+  transition: all .5s ease
+  a
+    color: #fff !important
+    text-decoration: none
+    transition: all .5s ease
+  &:hover
+    background-color: #ffffff
+    a
+      color: #354B68 !important
+  z-index: 999999999
+.fancybox-container
+  top: 8vh
+  bottom: 0
+.imgForbtnVideo, .onlineConsultingImg
+  width: 25px !important
+  margin-left: 15px
+.fixRightSideBar
+  position: fixed
+  width: 28vw
+  height: 100vh
+  background-color: rgba(255, 255, 255, 0.2)
+  top: 0
+  right: 0
+  z-index: 1
+  padding-top: 8vh
+  &.background
+    background-color: #d5dcdc00
+    border-left: 1px solid #fff !important
+  .aboutWrapper
+    padding-left: 4.5rem
+    padding-right: 12%
+    position: relative
+    *
+      color: #fff
+    div
+      margin-bottom: 3rem
+    .aboutCompany
+      margin-top: 3rem
+    ul
+      list-style: none
+      padding-left: 0
+    h3
+      font-size: 24px
+      font-weight: 500
+      margin-bottom: 1rem
+    a
+      font-size: 14px
+      text-decoration: none
+    .companyContacts
+      position: relative
+      ul
+        display: inline-block
+        margin-right: 30px
+        vertical-align: top
+        li
+          padding-left: 10px
+      &::after
+        content: ""
+        width: 100%
+        height: 1px
+        background-color: #fff
+        display: block
+        position: absolute
+  .onlineConsulting
+    color: #000
+    border: 1px solid #000
+    width: 70%
+    margin-left: 2.5rem
+    z-index: 2
+    &:hover
+      color: #fff
+  .addressTitle, .companyAddress
+    display: none
+
+.advSideBar
+  p
+    color: #212529
+.onlineConsulting
+  position: absolute
+  width: 100%
+  bottom: 35px
+  padding: 10px 15px
+  border: 1px solid #fff
+  border-radius: 6px
+  text-decoration: none !important
+  color: #fff
+  transition: all .5s ease
+  &:hover
+    background-color: #fff
+    color: #224b69
+.mapWrapper
+  padding-top: 8vh
+  width: 72vw
+  height: 93vh
+  iframe
+    width: 100%
+    height: 100%
+  .geoLocationmap
+    width: 100%
+    height: 100%
+.footer
+  width: 72vw
+  background-color: #000
+  height: 7vh
+  padding-left: 6%
+  span
+    color: #ffffff
+    font-size: 0.8rem
+.socials 
+  width: 100%
+  padding-top: 2rem
+// First section end
+// features start
+.withSimilarBg
+  .section
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top right
+    position: relative
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      width: 100%
+      height: 100%
+      background: linear-gradient(to right, #224b69, #224b6980, #224b6957)
+      z-index: 1
+.fullpageBlock
+  .forFeaturesInfo
+    padding-right: 30px
+.advantages *
+  color: #fff
+#opporPageBreadCrumbs, .otherBreadcrumbs
+  left: 50%
+  transform: translateX(-50%)
+  top: 8vh
+  z-index: 9
+  padding-left: 0
+  ol
+    background: none
+    li
+      &::before
+        color: #fff !important
+      a
+        position: relative
+        cursor: pointer
+        i::before
+          margin-top: -7px
+          font-size: 15px
+        &::after
+          content: ""
+          height: 1px
+          background-color: #fff
+          width: 0
+          display: block
+          left: 0
+          bottom: 0
+          z-index: 9
+          transition: width .3s linear
+        &:hover::after
+          width: 100%
+.middleWhiteLine
+  height: 1px
+  background: #ffffff85
+  width: 1200px
+  margin: 2.5rem 0px
+.opportunities h1 , .opportunities p
+  color: #fff
+.opportunities h1 
+  font-size: 2rem
+.opportunities p
+  font-size: 0.9rem
+#opporPageBody
+  background: linear-gradient(to right, #224b69, #224b6980, #224b6957)
+.opporChangeList span:first-child
+  height: 0
+  opacity: 0
+  display: none
+.opporTabsContent
+  background: linear-gradient(to right, #224b69, #224b6980, #224b6957)
+.opporTabsContent-item
+  display: block
+  position: absolute
+  z-index: 0
+  width: 100%
+  height: 100%
+  visibility: hidden
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  opacity: 0
+.fp-scroller
+  position: relative
+  z-index: 9
+.opporTabsContent-item.active
+  opacity: 1
+  visibility: visible
+  z-index: 1
+.featuresWrapper
+  position: relative
+  z-index: 2
+  padding-left: 1.5rem
+.featuresTitle
+  position: relative
+  padding: 10px 0
+  color: #000
+  &::after
+    content: ""
+    display: block
+    height: 3px
+    width: 50px
+    position: absolute
+    bottom: 0
+    left: 0
+    background-color: #64c100
+.featuresDetails
+  width: 96%
+  p
+    max-width: 350px
+    color: #212529
+    margin-bottom: 2rem
+  span
+    border-radius: 6px
+    border: 1px solid #fff
+    color: #000
+    cursor: pointer
+  span.activeFeature
+    background-color: #64c100
+    color: #fff
+    border-color: #64c100
+.advSideBar, .opportunity, .tariffs, .products
+  .usualShow
+    color: #fff
+    background-color: #224b69
+    border-color: #224b69
+    &:hover
+      background-color: #64c100
+      border-color: #64c100
+// .opportunity
+//   .featuresDetails
+//     width: 96.5%
+#contactsPageBody
+  .contactsPageLeftNavbar
+    ul
+      li
+        a      
+          span
+            background: #224b69 
+          &.active         
+            span
+              &::before
+                content: ""
+                border: 2px solid #224b69
+      &::before
+        content: ""
+        background-color: #224b69 
+  .fixRightSideBar.background
+    background-color: #224b69
+    border: none !important
+    .socials
+      height: 60px
+      .socialsDetails
+        display: block
+        width: 35px
+        height: 35px
+        margin: 5px 10px
+        border: 2px solid #fff
+        background-color: #224b69
+        border-radius: 6px
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: all .3s linear
+        i::before
+          font-size: 16.5px
+          color: #fff
+        &:hover
+          background-color: #000
+#fp-nav 
+  ul
+    li
+      width: 12px
+      height: 12px
+      margin: 0rem .5rem 4rem 1.5rem
+      &:last-child
+        margin-bottom: 0
+      a      
+        span
+          position: relative
+          display: block
+          top: 0
+          left: 0
+          width: 12px 
+          height: 12px
+          margin: 0
+          background: #fff
+        &.active         
+          span
+            transition: all .5s ease
+            position: relative
+            top: 0
+            left: 0
+            width: 12px 
+            height: 12px
+            margin: 0
+            &::before
+              content: ""
+              width: 22px
+              height: 22px
+              position: absolute
+              display: block
+              top: -5px
+              right: -5px
+              border: 2px solid #fff
+              border-radius: 100%
+              z-index: 0
+      &:hover
+        a
+          span
+            width: 12px 
+            height: 12px
+            margin: 0 !important
+    &::before
+      content: ""
+      width: 2px
+      height: 100%
+      position: absolute
+      background-color: #fff
+      top: 0
+      right: 13px
+      z-index: 1
+// features end
+
+// tariffs start 
+.tariffsCarousel
+  max-width: 1200px
+  margin-bottom: 2rem !important
+  a
+    text-decoration: none !important
+    color: #fff
+    min-height: 250px
+    justify-content: space-around
+    border: 1px solid transparent
+    img
+      width: 120px !important
+  a.activeTariff
+    border: 1px solid #fff
+  .owl-nav
+    position: fixed
+    bottom: 0
+    width: 1200px
+    button
+      width: 25px
+      outline: none !important
+      &:hover
+        background: none !important
+      &:nth-child(1)
+        float: left
+      &:nth-child(2)
+        float: right
+  .owl-dots
+    position: fixed
+    bottom: 0
+    left: 37%
+    .owl-dot
+      border: 2px solid transparent
+      width: 22px
+      height: 22px
+      border-radius: 100%
+      transition: all .5s ease
+      margin-right: 10px
+      outline: none
+      span
+        width: 12px
+        height: 12px
+        margin: 3px
+        background-color: #fff !important
+      &.active
+        border: 2px solid #fff
+#tariffs, #products
+  .data-tab-content
+    max-width: 1200px
+    min-height: 33vh
+    margin-top: 2rem !important
+    .data-tab-item
+      height: 100%
+      p
+        opacity: 1
+        position: relative
+        z-index: 2
+        &.tariffDescription.none
+          opacity: 0
+          z-index: -5
+      form
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%       
+        z-index: -1
+        opacity: 0
+        transition: all .8s ease
+        .form-group
+          width: 100%
+          margin-bottom: 0 
+          &:nth-child(1), &:nth-child(2)
+            width: 48% !important
+        .tariffSendButton
+          margin-top: 1rem
+      form.tarifFormActive
+        opacity: 1
+        z-index: 1
+.closeTariffsForm
+  position: absolute
+  right: 0
+.faqTitleWrapper
+  color: #fff
+  i::before
+    font-size: 2rem
+    font-weight: 400
+  h3
+    margin-left: 1.5rem
+.faqSection
+  p
+    color: #ffffff
+
+.additionalOptions
+  color: #fff
+  .container
+    margin-left: 0
+  h3
+    i::before
+      font-size: 2rem
+  #addOptionsCarousel
+    .optionWrapper
+      .optionIllustration
+        position: relative
+        padding: 0 1rem
+        // &::after
+        //   content: ""
+        //   display: block
+        //   position: absolute
+        //   width: 112%
+        //   height: 1px
+        //   background-color: #fff
+        //   left: 0
+        //   bottom: 0
+        //   z-index: 1
+      .optionDetails
+        padding-top: 1rem
+        text-align: center
+        .optionTitle
+          width: 200px
+          margin: 0 auto
+        .optionPrice
+          width: 100%
+          height: 40px
+          font-size: 1.5rem
+          vertical-align: middle
+          border: 1px solid #fff
+          border-radius: 15px
+          display: block
+          background-color: #76C300
+          color: #fff
+          margin: 1rem 0
+        .optionDeadLine
+          color: rgba(255, 255, 255, .5)
+    .owl-nav
+      position: absolute
+      bottom: -3rem
+      left: 0
+      z-index: 0
+      width: 100%
+      button
+        width: 25px
+        outline: none !important
+        &:hover
+          background: none !important
+        &:nth-child(1)
+          float: left
+        &:nth-child(2)
+          float: right
+    .owl-dots
+      position: absolute
+      bottom: -3rem
+      left: 50%
+      .owl-dot
+        border: 2px solid transparent
+        width: 22px
+        height: 22px
+        border-radius: 100%
+        transition: all .5s ease
+        margin-right: 10px
+        outline: none
+        span
+          width: 12px
+          height: 12px
+          margin: 3px
+          background-color: #fff !important
+        &.active
+          border: 2px solid #fff
+.discounts
+  .leftSideDiscount
+    margin-right: 4rem
+  .discountTitle
+    h3
+      color: #ffffff
+      i::before
+        font-size: 2rem
+    p
+      color: #ffffff
+  .alldiscountsListWrapper
+    .discounts-details
+      height: 100px
+      position: relative
+      .discountPercent
+        position: relative
+        width: 18%
+        height: 60px
+        margin-top: 10px
+        padding: 5px 0 0 16px
+        float: left
+        span
+          font-size: 2rem
+          color: #ffffff
+        img
+          position: absolute
+          top: 0
+          left: 0
+      .discountTetle
+        width: 75%
+        float: right
+        color: #fff
+  .discountWhiteLine
+    width: 100
+    height: 1px
+    background: rgba(255, 255, 255, .5)
+    &:last-child
+      display: none
+
+
+#faqCarousel
+  max-width: 1200px
+  .owl-item
+    height: 80vh
+  .owl-nav
+    position: absolute
+    bottom: -2px
+    width: 100%
+    button
+      width: 25px
+      outline: none !important
+      &:hover
+        background: none !important
+      &:nth-child(1)
+        float: left
+      &:nth-child(2)
+        float: right
+  .owl-dots
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    .owl-dot
+      border: 2px solid transparent
+      width: 22px
+      height: 22px
+      border-radius: 100%
+      transition: all .5s ease
+      margin-right: 10px
+      outline: none
+      span
+        width: 12px
+        height: 12px
+        margin: 3px
+        background-color: #fff !important
+      &.active
+        border: 2px solid #fff
+
+// tariffs end
+
+
+
+@import "ulugbekcorrections"

@@ -1,0 +1,311 @@
+.fade
+  transition: opacity .25s linear !important
+  
+#directionsModal
+  z-index: 999999
+  button.close
+    outline: none
+    box-shadow: none
+    width: 25px
+    height: 25px
+    background-color: #ccc
+    padding: 0
+    margin: 0 0 0 auto
+    border-radius: 50%  
+    transition: all .3s ease-in-out 
+    &:hover
+      background-color: #224b69
+      color: #fff
+      text-shadow: none !important
+.modal-dialog.modal-xl
+  margin: 8.3vh auto 0 !important
+  max-width: 1700px
+  height: 82.5vh
+  transform: translate(0,-109%)
+  .modal-content
+    height: 100%
+.modal.show .modal-dialog
+  // transform: none !important
+#directionsModalCarousel
+  .owl-stage-outer
+    .owl-stage
+      .owl-item
+        position: relative
+        .item
+          position: relative
+        .item::before
+          content: ""
+          width: 100%
+          height: 80px
+          display: block
+          position: absolute
+          left: 0
+          bottom: 0
+          background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+          z-index: 9
+  .owl-nav
+    margin: 0
+    position: absolute
+    width: 100%
+    max-width: 600px
+    bottom: -2.6rem
+    display: flex
+    justify-content: space-between
+    left: 50%
+    transform: translateX(-50%)
+    button
+      width: 20px
+      outline: none
+      &:hover
+        background-color: transparent
+  .owl-dots
+    position: absolute
+    left: 50%
+    width: 100%
+    transform: translateX(-50%)
+    max-width: 250px
+    bottom: -2.6rem
+    button
+      margin-right: 10px
+      outline: none
+      &.active
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        border: 2px solid #224b69
+        span
+          margin: 3px
+      span
+        margin: 3px
+        background-color: #224b69
+  .mainCategoryName
+    width: 100%
+    height: 200px
+    position: relative
+    z-index: 2
+    border: 1.5px solid #224b69
+    img
+      position: absolute
+      width: calc(100%)
+      height: calc(100% - 1px)
+      top: 0px  
+      left: 0px  
+    h3
+      color: #fff
+      font-size: 20px
+      position: relative
+      z-index: 9
+    &::before
+      content: ""
+      width: 100%
+      height: calc(100% - 1px)
+      position: absolute
+      background-color: rgba(0, 0, 0, 0.5)
+      top: 0
+      left: 0
+      z-index: 1 
+  .miniDirectionsWrapper
+    max-height: 45vh
+    margin-top: 25px
+    margin-bottom: 15px
+    overflow-y: auto
+    position: relative
+    ul
+      position: relative
+      list-style: none
+      border-left: 1px solid #000
+      padding-left: 10px
+      margin-left: 25px
+      // margin-top: 15px
+      &::before
+        position: absolute
+        display: block
+        width: 25px
+        height: 25px
+        background-color: #224b69
+        color: #fff
+        top: 0
+        left: -26px
+        padding-top: 1px
+        text-align: center
+        z-index: 1
+        cursor: pointer
+        transition: all .5s ease
+      &:nth-child(1):before
+        content: "A"
+      &:nth-child(2):before
+        content: "B"
+      &:nth-child(3):before
+        content: "V"
+      &:nth-child(4):before
+        content: "G"
+      &:nth-child(5):before
+        content: "D"
+      &:nth-child(6):before
+        content: "E"
+      li
+        a
+          font-size: 0.9rem
+          color: #000
+          text-decoration: none !important
+          transition: all .3s ease
+          &:hover
+            color: #64c100   
+#modalAccordions
+  *
+    color: #354B68
+  button
+    text-decoration: none
+  ul
+    list-style: none
+    li
+      margin: 10px 0
+      a
+        text-decoration: none
+#exampleModal2
+  form
+    input:focus, input:hover, textarea:focus, textarea:hover,
+      box-shadow: 0 0 0 0.1rem #224b69 !important
+      border-color: transparent !important
+    .iti__selected-flag:focus
+      outline: none !important
+      box-shadow: 0 0 0 0.1rem #224b69 !important
+      border-radius: .25rem
+    .iti__country-list
+      margin-top: 2px
+    #inputForTelegram
+      ul.iti__country-list
+        right: 0
+        transform: translateX(34.5%)
+        text-align: right
+    button
+      background-color: #224b69 
+      border: 0
+      height: 40px !important
+      transition: all .2s linear
+      &:hover
+        background-color: #64c100 
+      &:focus
+        box-shadow: none !important
+        outline: none !important
+.select2-results__option.select2-results__option--highlighted
+  background-color: #224b69 !important
+.select2-container--default .select2-selection--single .select2-selection__arrow
+  top: 4px
+  right: 6px
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+  border-width: 9px 5px 0px 5px
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+  border-width: 0 5px 9px 5px
+.modal-dialog-slideout .modal-content 
+  border: 0
+  padding: 0 20px 
+.modal-dialog-slideout .modal-header,
+.modal-dialog-slideout .modal-footer 
+  height: 69px
+.modal-dialog-slideout .modal-header 
+  h5
+    text-align: center
+  button
+    position: absolute
+    top: 1rem
+    right: 1rem
+    outline: none
+    transition: all .3s ease-in-out
+    span
+      width: 25px
+      height: 25px
+      background-color: #ccc
+      border-radius: 50%
+      display: block
+      padding-top: 1px
+    &:hover
+      span
+        background-color: #224b69
+        color: #fff
+        text-shadow: none !important
+.modalLogoBlock
+  border-bottom: 1px solid #dee2e6
+  margin-bottom: 1rem
+  img
+    max-width: 250px
+    margin: 0 auto 1rem
+.iti.iti--allow-dropdown.iti--separate-dial-code
+  max-width: 236px
+.select2-selection.select2-selection--single.select2BoxShadow
+  box-shadow: 0 0 0 0.1rem #224b69 !important
+  outline: none
+.select2-container
+  .select2-selection--single
+    height: 38px
+    padding: .2rem 0
+    border-color: #ced4da
+    &:focus, &:hover, &:focus-within, &:visited, &:active
+      box-shadow: 0 0 0 0.1rem #224b69 !important
+      outline: none
+.select2-container--open .select2-dropdown--below
+  box-shadow: 0 0 0 0.1rem #224b69 !important
+  input
+    outline: none
+    &:focus, &:hover
+      border-color: #224b69 !important
+      
+.socialNetworks
+  height: 60px
+  border-top: 1px solid #dee2e6
+  .socialsDetails
+    display: block
+    width: 35px
+    height: 35px
+    margin: 5px 10px
+    background-color: #224b69
+    border-radius: 6px
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: all .3s linear
+    i::before
+      font-size: 16.5px
+      color: #fff
+    &:hover
+      background-color: #000
+      // i:before
+      //   color: 
+.modal-dialog.modal-dialog-slideout
+  max-width: 30vw
+  box-shadow: -3px 0px 6px 3px #0000001c
+.modal-dialog-slideout
+  min-height: 100%
+  margin: 0 0 0 auto
+  background: #fff
+.modal.fade.show .modal-dialog.modal-dialog-slideout
+  -webkit-transform: translate(0, 0)
+  -ms-transform: translate(0, 0)
+  transform: translate(0, 0)
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-align: stretch
+  align-items: stretch
+  -webkit-box-align: stretch
+  height: 100%
+.modal.fade .modal-dialog.modal-dialog-slideout
+  -webkit-transform: translate(100%, 0)
+  -ms-transform: translate(100%, 0)
+  transform: translate(100%, 0)
+  // transition: translate .5s ease-in-out
+.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body 
+  overflow-y: auto
+  overflow-x: hidden
+
+
+
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+  background-color: #224b69
+
+
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCS-dark-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar
+  background-color: #224b69
+
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
+  background-color: #224b69

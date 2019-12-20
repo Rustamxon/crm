@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GOCRM</title>
+    <link rel="icon" href="img/icon.png">
+
+    <!-- css libs start -->
+
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/slider.style.css">
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/libs/fullpage.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+        
+    <!-- css libs end -->
+    
+    <!-- custom css start -->
+
+
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+
+    <!-- custom css end -->
+</head>
+<body>
+  <!-- Preloader start -->
+  <div id="preloader" class="visible d-flex justify-content-center align-items-center">
+    <div class="preloaderImgWrapper d-flex">
+      <img src="img/prel1.png" alt="GOCRM">
+      <img src="img/prel2.png" class="rotateO" alt="GOCRM">
+    </div>
+  </div>
+
+
+  <!-- Preloader end -->
+  
+  
+  
+
+
+
+
+
+
+
+    <!-- JS Libs start -->
+
+  <script src="js/jquery-3.4.0.min.js"></script>
+  <script src="js/libs/popper.min.js"> </script>
+  <script src="js/libs/bootstrap.min.js"></script>
+  <script src="js/libs/hammer.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
+  <script src="js/libs/jquery.fullpage.min.js"></script>
+  <script src="js/libs/jquery.fullpage.extensions.min.js"></script>
+
+  <!-- JS Libs end -->
+
+  <!-- custom js  -->
+
+  <script src="js/slider.js"></script>
+  <script src="js/common.js"></script>
+
+
+  <script>
+    function loadData() {
+      return new Promise((resolve, reject) => {
+        setTimeout(resolve, 2000);
+      });
+    };
+
+    loadData().then(() => {
+      let preloaderEl = document.getElementById('preloader');
+      preloaderEl.classList.add('hidden');
+      preloaderEl.classList.remove('visible');
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GOCRM</title>
+    <link rel="icon" href="img/icon.png">
+    <!-- css libs start -->
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/slider.style.css">
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/libs/fullpage.min.css">
+    <link rel="stylesheet" href="css/libs/select2.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <!-- custom css start -->
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/mapmarker.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8e6d2c76-6c60-443b-9682-34d70315a8d3&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+<body id="contactsPageBody">
+  <!-- Header start -->
+  <header class="headerWrapper">
+    <div class="container-fluid px-0" style="height: 100%;">
+      <div class="d-flex align-items-center justify-content-between" style="height: 100%">
+        <div class="blockForLogo">
+          <a href="index.html">
+            <img src="img/LogoDark.png" alt="">
+          </a>
+        </div>
+        <nav class="navbar navbar-expand-xl navbar-light pb-0" style="height: 100%">
+          <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburgerForNav"></span>
+          </button>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <button type="button" class="close navbarCloseButton">
+              <span>&times;</span>
+            </button>
+            <ul class="navbar-nav mr-auto align-items-center">
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <button type="button" class="btn btn-default withoutEffect" data-toggle="modal"
+                  data-target="#directionsModal">Направления</button>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="tariffs.html">Тарифы</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="advantages.html">Приемущество</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="opportunities.html">Возможности</a>
+              </li>
+              <li class="nav-item active hb-border h-100 d-flex">
+                <a class="nav-link d-flex align-items-center b-border" href="contacts.html">Контакты</a>
+              </li>
+              <li class="nav-item active h-100 d-flex">
+                <button type="button" class="btn btn-default demoAccesHeartBeat" data-toggle="modal"
+                  data-target="#exampleModal2" id="demoBlurEffect">
+                  Получить демо доступ
+                </button>
+              </li>
+              <li class="hamburgerNumber">
+                <span> +998 93 544 11 10</span>
+                <span> +998 93 544 11 10</span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="contactNumbers d-flex flex-column align-items-center">
+          <div>+998 93 544 11 10</div>
+          <div>+998 93 544 11 10</div>
+        </div>
+        <div class="numbersForresponsive">
+          <button class="numbersListOpen">
+            <i class="flaticon-call-answer"></i>
+          </button>
+          <ul class="respNumbersList">
+            <li class="respNumbersListDetails">+998 93 544 11 10</li>
+            <li class="respNumbersListDetails">+998 93 544 11 10</li>
+          </ul>
+        </div>
+        <div class="forLanguages d-flex align-items-center">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle headerBtnEffect" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              RU
+            </button>
+            <div class="dropdown-menu" id="otherLanguages" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">UZB</a>
+              <a class="dropdown-item" href="#">ENG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header end -->  
+  <div id="contactsPage" class="fullpageBlock pt-5">
+    <div class="section" id="formBlock">
+      <div class="container-fluid d-flex align-items-center pl-0" style="height: 100%">
+        <form action="" class="callBackform">
+          <div class="row flex-wrap-reverse">
+            <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 contactsInputs">
+              <h3>
+                Форма обротный связи
+              </h3>
+              <input type="name" placeholder="Имя" class="form-control nameSurname headerBtnEffect">
+              <input type="name" placeholder="Фамилия" class="form-control nameSurname headerBtnEffect">
+              <input type="text" placeholder="Компания" class="form-control otherInputs headerBtnEffect">
+              <input type="email" placeholder="E-mail" class="form-control otherInputs headerBtnEffect">
+              <input type="text" placeholder="Тема" class="form-control otherInputs headerBtnEffect">
+              <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Ваше сообщение"></textarea>
+              <button type="submit" class="btn btn-block">Отправить</button>
+            </div>
+            <div class=" col-lg-4 col-md-6 col-sm-12 contactsIllustrator d-none d-sm-none d-md-block">
+             <div class="callbakcImg">
+              <img src="img/crm4.jpg" alt="">
+             </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="down-section scrol-flex flex-column align-items-center ">
+        <span></span>
+        <span class="mouse-icon inner-link btnNext">
+          <span></span>
+        </span>
+      </div>
+    </div>
+    <div class="section" id="mapBlock">
+      <div class="mapWrapper">
+        <div id="geoLocationmap" class="geoLocationmap"></div>
+        <div class="down-section scrol-flex flex-column align-items-center">
+          <span></span>
+          <span class="mouse-icon inner-link d-block btnPrew">
+            <span></span>
+          </span>
+        </div>
+      </div>
+      <footer class="footer d-flex align-items-center justify-content-between pr-5">
+        <span>&copy 2019 - GOCRM</span>
+        <span class="d-block mr-2">Разработана в - GOOD ONE</span>
+      </footer>      
+    </div> 
+  </div>
+  <div class="fixRightSideBar background" id="contactsPageSideBar">
+    <button class="openSideBarBtn">Доп.инфо</button>
+    <div class="aboutWrapper">
+      <div class="aboutCompany">
+        <h3>
+          Компания
+        </h3>
+        <ul>
+          <li><a href="#">История</a></li>
+          <li><a href="#">Партнёры</a></li>
+          <li><a href="#">Награды</a></li>
+        </ul>
+      </div>
+      <div class="aboutProduct">
+        <h3>
+          Продукция
+        </h3>
+        <ul>
+          <li><a href="#">Антибиотики и Дезинфицирующие средства</a></li>
+          <li><a href="#">Вакцины</a></li>
+          <li><a href="#">Кормовые добавки</a></li>
+          <li><a href="#">Жидкие Витаминные Комплексы</a></li>
+          <li><a href="#">Готовые Комбикорма</a></li>
+        </ul>
+      </div>
+      <div class="companyContacts">
+        <h3 class="addressTitle">
+          Адрес
+        </h3>
+        <div class="companyAddress">
+          г.Ташкент, ул. Буйук Ипак Йули, Дом 24-13
+        </div>
+        <h3>
+          Контакты
+        </h3>
+        <div class="flexBlockForNumber">
+          <ul>
+            <span>Отдел продаж</span>
+            <li><span>+998 94 544 11 10</span></li>
+            <li><span>+998 94 544 11 10</span></li>
+            <li><span>+998 94 544 11 10</span></li>
+            <li><span>info@gocrm.uz</span></li>
+          </ul>
+          <ul>
+            <span>Офис</span>
+            <li><span>+998 94 544 11 10</span></li>
+            <li><span>+998 94 544 11 10</span></li>
+            <li><span>+998 94 544 11 10</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <section class="socials d-flex justify-content-center align-items-center">
+        <a href="#" class="socialsDetails"><i class="flaticon-telegram"></i></a>
+        <a href="#" class="socialsDetails"><i class="flaticon-facebook"></i></a>
+        <a href="#" class="socialsDetails"><i class="flaticon-instagram"></i></a>
+        <a href="#" class="socialsDetails"><i class="flaticon-google-plus"></i></a>
+      </section>
+    </div>
+  </div>
+   <!-- JS Libs start -->
+  <script src="js/jquery-3.4.0.min.js"></script>
+  <script src="js/libs/popper.min.js"> </script>
+  <script src="js/libs/bootstrap.min.js"></script>
+  <script src="js/libs/hammer.min.js"></script>
+  <script src="js/libs/intlTelInput.min.js"></script>
+  <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
+  <script src="js/vendors/scrolloverflow.min.js"></script>
+  <script src="js/libs/jquery.fullpage.js"></script>
+  <script src="js/libs/jquery.mousewheel.min.js"></script>
+  <script src="js/libs/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/libs/select2.min.js"></script>
+  <script src="js/libs/select2-searchInputPlaceholder.js"></script>
+  <!-- custom js start  -->
+  <script src="js/slider.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    ymaps.ready(init);
+      var myMap,
+      myPlacemark;
+
+      function init() {
+        myMap = new ymaps.Map("geoLocationmap", {
+          center: [41.3285434194238, 69.33453556006006],
+          zoom: 17
+        });
+        myPlacemark = new ymaps.Placemark([41.3285434194238, 69.33453556006006], {}, {
+          balloonContentHeader: 'GOCRM',
+          balloonContentBody: 'GOODONE LTD',
+          balloonContentFooter: 'IT COMPANY',
+          hintContent: 'GOCRM',
+          iconLayout: 'default#image',
+          iconImageHref: 'img/marker.png',
+          iconImageSize: [32, 50],
+          iconImageOffset: [0, -42]
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable([
+          'scrollZoom',          
+        ]);
+        myMap.behaviors.enable([
+          'dblClickZoom',
+          // 'multiTouch'
+        ]);
+        myMap.controls.remove('fullscreenControl');
+      }
+  </script>
+  <!-- custom js  -->
+</body>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Напишите ваши данные</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Имя:</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Javlon">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Фамилия:</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Abdullayev">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Ваша организация:</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="ООО 'BrandIndustry'">
+          </div>
+          <div class="pt-3">Выберите вашу тип предприятию</div>
+          <div class="custom-control custom-radio pt-3">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio1">Промышленность</label>
+          </div>
+          <div class="custom-control custom-radio pt-3">
+            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio3">Сферы услуг </label>
+          </div>
+          <div class="form-group mt-3">
+            <label for="message-text" class="col-form-label">Ваша Сообшения:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Получить</button>
+      </div>
+    </div>
+  </div>
+</div>
+</html>

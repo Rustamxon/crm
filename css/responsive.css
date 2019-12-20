@@ -1,0 +1,1135 @@
+/* .container-fluid{
+    max-width: 1700px !important;
+} */
+.data-tab-item {
+  display: none;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease
+}
+
+.data-tab-item.active {
+  display: block;
+}
+.iti__flag {
+    background-image: url("../img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-resolution: 192dpi) {
+    .iti__flag {
+        background-image: url("../img/flags@2x.png");
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .container-fluid{
+        max-width: 1780px
+    }
+    header.headerWrapper .forLanguages{
+        margin-right: 0;
+    }
+} 
+
+@media only screen and (max-width: 1800px) {
+    .container-fluid{
+        max-width: 1600px
+    }
+    header.headerWrapper .contactNumbers::after{
+        right: -4.3vw;
+    }
+} 
+
+@media only screen and (max-width: 1680px) {
+    .container-fluid{
+        max-width: 1500px
+    }
+    .featuresDetails{
+        width: 91%;
+        padding-left: 1rem !important;
+    }
+    header.headerWrapper ul.navbar-nav li{
+        margin-right: 0;
+    }
+    .modal-dialog.modal-dialog-slideout{
+        max-width: 35vw;
+    }
+    #fixRightSideBar .main-directions{
+        margin-right: 18%;
+        width: 74%;
+    }
+    .fixRightSideBar .aboutWrapper .aboutCompany{
+        margin-bottom: 1rem;
+    }
+    .fixRightSideBar .aboutWrapper .companyContacts ul:last-child{
+        margin-right: 0;
+    }
+    .fixRightSideBar .aboutWrapper .companyContacts ul li{
+        padding-left: 0;
+    }
+    .middleWhiteLine{
+        width: 992px;
+    }
+    .tariffsCarousel,
+    #tariffs .data-tab-content {
+        max-width: 1024px;
+    }
+    #tariffs .container,
+    #faqCarousel {
+        max-width: 1024px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .container-fluid{
+        max-width: 1440px
+    }
+    #fixRightSideBar .main-directions {
+        margin-right: 17%;
+        width: 72%;
+    }
+    .modal-dialog.modal-dialog-slideout{
+        max-width: 38vw;
+    }
+    .modal-dialog-slideout .modal-header,
+    .modal-dialog-slideout .modal-footer {
+        height: 65px;
+    }
+    #exampleModal2 .modal-body {
+        padding-top: 5px;
+    }
+    #exampleModal2 .modal-body .modalLogoBlock{
+        margin-bottom: 0;
+    }
+    #exampleModal2 .modal-body .modalLogoBlock img{
+        margin-bottom: 5px;
+    }
+    #exampleModal2 span.select2{
+        width: 100% !important;
+    }
+    #exampleModal2 form .form-group{
+        margin-bottom: 8px;
+    }
+    .discounts .leftSideDiscount{
+        margin-right: 1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1536px) {
+    .container-fluid{
+        max-width: 1380px
+    }
+    header.headerWrapper .blockForLogo:after{
+        right: -25px;
+    }
+    header.headerWrapper .contactNumbers::after {
+        right: -3.3vw;
+    }
+    header.headerWrapper .forLanguages {
+        margin-right: -.7rem;
+    }
+    #fixRightSideBar .main-directions{
+        margin-right: 15%;
+    }
+    .featuresDetails{
+        padding-left: 2.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    .additionalOptions #addOptionsCarousel .optionWrapper .optionIllustration::after{
+        width: 114%;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+    .container-fluid {
+        max-width: 1280px
+    }
+    header.headerWrapper .contactNumbers{
+        display: none !important;
+        margin-right: 0;
+    }
+    header.headerWrapper .contactNumbers::after{
+        display: none;
+    }
+    header.headerWrapper .numbersForresponsive{
+        display: block;
+    }
+    header.headerWrapper .forLanguages{
+        margin-right: -1.4rem;
+    }
+    header.headerWrapper .demoAccesHeartBeat{
+        margin-top: 6px;
+    }
+    header.headerWrapper .numbersForresponsive .numbersListOpen i::before{
+        font-size: 1.5rem;
+    }
+    .modal-dialog.modal-dialog-slideout{
+        max-width: 40vw;
+    }
+    #fixRightSideBar .main-directions{
+        margin-right: 14%;
+    }
+    #contactsPageBody .fixRightSideBar.background .aboutWrapper{
+        padding-left: 2.5rem;
+    }
+    .middleWhiteLine{
+        width: 900px;
+        margin: 0.5rem 0;
+    }
+    .tabs{
+        max-width: 900px;
+    }
+    .tabs a{
+        padding: 0 15px;
+    }
+    .tarifNewImg{
+        width: 150px;
+    }
+    #ulugbekTariff #mCSB_1_container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .tabItemNewStyle{
+        width: 26%;
+    }
+    .wrapperRight{
+        width: 71%;
+    }
+    .tarifOptionDetails{
+        width: 45%;
+    }
+    #addOptionsCarousel{
+        max-width: 850px;
+    }
+    #faqCarousel{
+        max-width: 930px;
+    }
+    .faqTitleWrapper h3{
+        font-size: 1.5rem;
+    }
+    #faqCarousel{
+        max-width: 880px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .container-fluid {
+        max-width: 1240px
+    }
+    #fixRightSideBar{
+        width: 32vw;
+    }
+    #fixRightSideBar .main-directions{
+        margin-right: 8.5%;
+        width: 80%;
+
+    }
+    header.headerWrapper nav.navbar{
+        padding-right: 0;
+    }
+    .mainPageElementsWrapper{
+        margin-top: 31.5vh;
+    }
+    h1.heading_tittle {
+        font-size: 2rem;
+        margin-bottom: 2.4rem;
+    }
+    .modal-dialog.modal-dialog-slideout {
+        max-width: 44vw;
+    }
+    .fixRightSideBar .aboutWrapper .companyContacts ul{
+        margin-right: 10px;
+    }
+    .breadcrumb{
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+    }
+    .opportunities h1, 
+    #featuresBlock .titleColumn h1 {
+        font-size: 1.5rem;
+    }
+    .middleWhiteLine{
+        margin: .2rem 0;
+        width: 840px;
+    }
+    .opperDescription{
+        margin-bottom: 0;
+    }
+    .tabs{
+        width: 820px;
+    }
+    .tarifNewImg{
+        width: 130px;
+    }
+    .wrapperRight{
+        width: 55%;
+        margin-left: 1rem;
+    }
+    .discounts .alldiscountsListWrapper .discounts-details .discountPercent span{
+        font-size: 1.5rem;
+    }
+    .discounts .leftSideDiscount{
+        margin-right: 0;
+    }
+    .discountsColumn{
+        margin-left: -35px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .container-fluid{
+        max-width: 1200px
+    }
+    .modal-dialog.modal-dialog-slideout {
+        max-width: 46vw;
+    }
+    header.headerWrapper .forLanguages{
+        margin-right: 0;
+    }
+    /* COntacts Page start  */
+    .fixRightSideBar .aboutWrapper .aboutCompany{
+        margin-top: 0;
+    }
+    #contactsPageBody .fixRightSideBar.background .socials a.socialsDetails:last-child{
+        margin-right: 2.5rem;
+    }
+    #contactsPage .section .callBackform{
+        width: 90%;
+        margin-left: 2rem;
+    }
+    .mainPageElementsWrapper{
+        margin-left: 1rem;
+    }
+    #opporPageBreadCrumbs{
+        padding-left: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .container-fluid{
+        max-width: 100%;
+    }
+    .otherBreadcrumbs{
+        padding-left: 15px;
+    }
+    header.headerWrapper .blockForLogo:after{
+        display: none;
+    }
+    header .container-fluid{
+        padding: 15px !important;
+    }
+    .navbar-expand-xl .navbar-toggler{
+        display: block;
+    }
+    header.headerWrapper nav.navbar{
+        padding: 0;
+    }
+    header.headerWrapper nav.navbar button.navbar-toggler{
+        margin-right: 3rem;
+        outline: none !important;
+    }
+    header.headerWrapper .numbersForresponsive {
+        margin-right: 2rem;
+    }
+    header.headerWrapper nav.navbar .navbar-collapse{
+        background: #fff;
+        position: absolute;
+        width: 250px;
+        height: 330px;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        z-index: -1;
+        border-radius: 6px;
+        -webkit-transform: translate3d(0px, 0px, 0px);
+                transform: translate3d(0px, 0px, 0px);
+        -webkit-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+    header.headerWrapper nav.navbar .navbar-collapse.show{
+        -webkit-transform: translate3d(0, 106%, 0);
+                transform: translate3d(0, 106%, 0);
+        opacity: 1;
+    }
+    header.headerWrapper nav button.navbar-toggler{
+        height: 35px;
+        border: none;
+    }   
+    header.headerWrapper .forLanguages{
+        margin-right: 1rem;
+    }
+    header.headerWrapper .demoAccesHeartBeat{
+        -webkit-box-shadow: 0 0 0 0.15rem transparent !important;
+                box-shadow: 0 0 0 0.15rem transparent !important;
+        margin-top: 0;
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
+        margin-bottom: 10px;
+    }
+    .navbar-expand-xl .navbar-nav{
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
+    }
+    .mainPageElementsWrapper{
+        margin-left: 0;
+        padding: 0 4rem;
+        margin-top: 10vh;
+        text-align: center;
+    }
+    .mainPageElementsWrapper h1.heading-title{
+        font-size: 1.5rem;
+    }
+    #fixRightSideBar {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50vh;
+        top: unset;
+        padding-top: 0px;
+        overflow: auto;
+        background-color: transparent;
+    }
+
+    #fixRightSideBar::before {
+        display: none;
+    }
+
+    #fixRightSideBar #mCSB_7 {
+        width: 100%;
+    }
+
+    #fixRightSideBar #mCSB_7 .main-directions {
+        margin: 0 auto;
+    }
+
+    #fixRightSideBar .mCSB_draggerContainer {
+        right: -10px;
+    }    
+    .main-directions h3 {
+        width: 200px;
+        height: 35px;
+        position: fixed;
+        z-index: 99;
+        bottom: 50vh;
+    }
+    .modal-dialog.modal-dialog-slideout {
+        max-width: 51vw;
+    }
+    
+    #contactsPage .section .callBackform {
+        width: 100%;
+        margin-left: 4rem;
+    }
+    .slideRightSidebar{
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    .slideRightSidebar.showSideBar{
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+    }
+    .mapWrapper{
+        width: 100vw;
+    }
+    /* #fp-nav{
+        display: none;
+    } */
+    .footer{
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .footer span{
+        margin: 0 !important;
+    }
+    .forFeaturesImg {
+        padding-left: 3rem;
+    }
+    .featuresDetails h3,
+    .featuresDetails p{
+        display: none;
+    }
+    .sideBarResponsive {
+        height: 36vh;
+        padding-top: 0;
+        top: unset;
+        left: 0;
+        bottom: 0;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+                transform: translateY(100%);
+        width: 100vw;
+        border-radius: 15px 15px 0 0;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .sideBarResponsive.opporList {
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+    }
+    .featuresDetails{
+        margin: 10px auto !important;
+        width: 60%;
+    }
+    .openSideBarBtn{
+        display: block;
+        top: 0;
+        width: 300px;
+        left: 50%;
+        border-radius: 10px 10px 0 0;
+        -webkit-transform: translateX(-50%) translateY(-98%);
+            -ms-transform: translateX(-50%) translateY(-98%);
+                transform: translateX(-50%) translateY(-98%);
+        border: 1px solid rgba(255, 255, 255, .2);
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        color: #000;
+        border-bottom: 0px;
+        font-size: 15px;
+        background: rgba(255, 255, 255, 1);
+    }   
+    .bind-btns-to-fullpage{
+        margin-top: 0.5rem;
+    }
+    #contactsPageSideBar .openSideBarBtn{
+        width: 100px;
+        border-radius: 0;
+        top: 12vh;
+        left: 0;
+        -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+                transform: translateX(-100%);
+        -webkit-box-shadow: 0 0 0 0.15rem #224b69 !important;
+                box-shadow: 0 0 0 0.15rem #224b69 !important;
+        border-radius: 6px 0 0 6px;
+    }
+    .btnPrew{
+        display: block !important;
+    }
+    .whiteMouseDown {
+        display: none;
+    }
+    .middleWhiteLine{
+        width: 91%;
+        margin: 0 auto;
+    }
+    .tabs{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .additionalOptions .container{
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    #addOptionsCarousel{
+        max-width: 100%;
+    }
+    .discountsColumn {
+        margin-left: 0px;
+    }
+}
+@media only screen and (width: 1200px) {
+    .headerWrapper .demoAccesHeartBeat {
+        margin-top: -14px;
+    }
+    header.headerWrapper nav.navbar .navbar-collapse.show {
+        -webkit-transform: translate3d(0px, 64px, 0px);
+        transform: translate3d(0, 106%, 0);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+    .advantagesTitle{
+        font-size: 1.5rem;
+    }
+    .forFeaturesImg{
+        max-width: 320px;
+        margin-left: auto;
+        padding-left: 0;
+    }
+    .forFeaturesInfo p{
+        font-size: 14px;
+    }
+    .featuresTitle{
+        font-size: 20px;
+    }
+    /* .advInfo{
+        margin-left: 3rem;
+    } */
+
+}
+
+@media only screen and (max-width: 1024px) {
+    header.headerWrapper .blockForLogo {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+    header.headerWrapper .blockForLogo:after {
+        display: none;
+    }
+    header.headerWrapper nav.navbar .navbar-collapse {
+        -webkit-transform: translate3d(-110%, 102%, 0px);
+        transform: translate3d(-110%, 102%, 0px);
+        left: -15px;
+        width: 100vw;
+        height: 92vh;
+    }    
+    header.headerWrapper nav.navbar .navbar-collapse.show {
+        -webkit-transform: translate3d(0, 102%, 0px);
+        transform: translate3d(0, 102%, 0px);
+    }
+    header.headerWrapper ul.navbar-nav li{
+        margin-top: 1rem;
+        width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        border-bottom: .5px solid #f1f1f1 !important;
+    }
+    header.headerWrapper ul.navbar-nav li:hover{
+        border: none;
+    }
+    .headerWrapper .navbarCloseButton {
+        display: block;
+    }
+    .otherBreadcrumbs,
+    #opporPageBreadCrumbs {
+        display: none;
+    }
+    h1.heading_tittle{
+        font-size: 1.5rem;
+    }
+    .modal-dialog.modal-dialog-slideout {
+        max-width: 100vw;
+    }
+    #directionsModal{
+        background-color:rgba(0, 0, 0, 0.5);
+    }
+    #exampleModal2 form .form-group{
+        width: 48%;
+    }
+    #exampleModal2 form .form-group .iti.iti--allow-dropdown {
+        width: 100% !important;
+        max-width: unset;
+    }
+    #exampleModal2 form #inputForTelegram ul.iti__country-list {
+        left: 0;
+        right: unset;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        text-align: left;
+    }
+    #contactsPage .section .callBackform{
+        margin-left: 4rem;
+        margin-right: 2rem;
+    }
+    #contactsPageSideBar {
+        width: 40vw;
+        padding-top: 9vh;
+    }
+    #contactsPageSideBar section.socials{
+        padding-top: 0;
+    }
+    #contactsPageBody .fixRightSideBar.background .socials a.socialsDetails {
+        margin: 0 !important;
+    }
+    .forFeaturesImg{
+        margin: auto;
+        max-width: 350px;
+    }
+    .advInfo{
+        margin: 0;
+        padding: 0 3rem;
+    }
+    .advInfo .forFeaturesInfo {
+        padding-right: 0;
+    }
+    .featuresWrapper{
+        padding-left: 0;
+    }
+    .opporChangeList span:first-child {
+        display: block;
+        opacity: 1;
+        height: auto;
+    }
+    .tabs {
+        margin: 0;
+    }
+    .tabItemNewStyle{
+        margin-left: 2rem;
+    }
+    .wrapperRight{
+        margin-left: 4rem;
+    }
+    #addOptionsCarousel{
+        max-width: 960px;
+        margin: 0 auto 0 1rem;
+    }
+    .additionalOptions .container{
+        margin: 0;
+    }
+    header.headerWrapper nav.navbar .navbar-collapse{
+        border-radius: 0;
+    }
+    header.headerWrapper nav.navbar .navbar-collapse.show{
+        -webkit-transform: translate3d(0, 101.5%, 0px);
+                transform: translate3d(0, 101.5%, 0px);
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+    .sideBarResponsive {
+        height: 24vh;
+    }
+    .modal-dialog.modal-xl .modal-content{
+        height: 96%;
+    }
+}
+@media only screen and (min-height: 1152px) {
+    .opportunity {
+        height: 24vh;
+    }
+    header.headerWrapper nav.navbar .navbar-collapse{
+        -webkit-transform: translate3d(-110%, 101.2%, 0px);
+                transform: translate3d(-110%, 101.2%, 0px);
+    }
+    header.headerWrapper nav.navbar .navbar-collapse.show{
+        -webkit-transform: translate3d(0, 101.2%, 0px);
+                transform: translate3d(0, 101.2%, 0px);
+    }
+    .modal-dialog.modal-xl .modal-content{
+        height: 89%;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1366px) and (max-height: 900px) {
+    .headerWrapper .demoAccesHeartBeat{
+        margin-top: 6px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1366px) and (max-height: 800px) {
+    .headerWrapper .demoAccesHeartBeat{
+        height: 38px;
+        margin-top: 6px;
+    }
+    .opportunities h1{
+        margin-bottom: 0;
+    }
+    .opportunities p{
+        font-size: 13px;
+        margin-bottom: 6px;
+        line-height: 20px;
+        letter-spacing: .3px;
+    }
+    .advantages .forFeaturesInfo p{
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: .3px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1366px) and (max-height: 768px) {
+    .whiteMouseDown{
+        display: none;
+    }
+}
+@media only screen and (max-width: 992px) {
+    
+    
+}
+@media only screen and (max-width: 991px) {
+    #contactsPage .section .callBackform {
+        margin-left: 4rem;
+    }
+    .tabs {
+        max-width: 650px;
+    }
+}
+@media only screen and (max-width: 800px){
+
+}
+@media only screen and (max-width: 768px){
+    
+    header.headerWrapper .forLanguages{
+        margin-right: 0;
+    }
+    #exampleModal2 form .form-group{
+        width: 100%;
+    }
+    #contactsPageBody .fixRightSideBar.background .socials .socialsDetails{
+        margin: 5px;
+    }
+    #contactsPageBody .fixRightSideBar.background .socials a.socialsDetails:last-child{
+        margin-right: 6px;
+    }
+    
+    button.openSideBarBtn.btnMapPosition{
+        top: 15vh;
+    }
+    .footer{
+        padding: 0 15px !important;        
+    }
+    .tabs{
+        max-width: 600px;
+    }
+    .tabItemNewStyle{
+        width: 30%;
+    }
+    .tabItemNewStyle{
+        margin-left: 0;
+    }
+    .tabItemNewStyle h3{
+        font-size: 1.3rem;
+    }
+    .wrapperRight{
+        margin-left: 1rem;
+    }
+    .tarifOptionDetails{
+        width: 100%;
+    }
+    .discounts .container{
+        padding-left: 3rem !important;
+    }
+    #faqCarousel{
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+    #faqCarousel .owl-nav{
+        position: relative;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    #directionsModalCarousel{
+        display: none;
+    }
+    #modalAccordions .card{
+        border: 1px solid rgba(0, 0, 0, .125);
+    }
+}
+@media only screen and (max-width: 600px) {
+    header.headerWrapper .demoAccesHeartBeat {
+        margin-bottom: 1rem;
+    }
+    header.headerWrapper .numbersForresponsive{
+        display: none;
+    }
+    header.headerWrapper nav.navbar button.navbar-toggler{
+        margin-top: -5px;
+    }
+
+    header.headerWrapper .hamburgerNumber {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 20px;
+    }
+    header.headerWrapper .demoAccesHeartBeat{
+        height: 40px;
+    }
+    .mainPageElementsWrapper{
+        margin-top: 50%;
+        padding: 0 1.8rem;
+    }
+    .headerWrapper .forLanguages #otherLanguages{
+        -webkit-transform: translate3d(0px, -80px, 0px) !important;
+                transform: translate3d(0px, -80px, 0px) !important;
+    }
+    h1.heading_tittle{
+        margin-bottom: .4rem;
+        font-size: 20px;
+    }
+    .slider_main_block .navi{
+        display: none;
+    }
+    #fixRightSideBar {
+        display: none !important;
+    }
+    .fixRightSideBar .aboutWrapper div{
+        margin-bottom: 0;
+    }
+    .fixRightSideBar .aboutWrapper .companyContacts ul:last-child{
+        margin-bottom: 0;
+    }
+    .iti.iti--container{
+        z-index: 999991;
+    } 
+    #directionsModal .modal-body{
+        height: 100%;
+        overflow: scroll;
+    }
+    .fixRightSideBar .addressTitle,
+    .fixRightSideBar .companyAddress{
+        display: block;
+    }
+    #faqCarousel .owl-item {
+        height: 100% !important;
+    }
+    #faqCarousel .owl-dots,
+    #faqCarousel .owl-nav{
+        bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .fixRightSideBar .aboutWrapper h3{
+        margin-bottom: 0;
+    }
+    .fixRightSideBar .aboutWrapper div{
+        margin-bottom: 1rem;
+    }
+    #contactsPageBody .fixRightSideBar.background .socials a.socialsDetails:last-child{
+        margin-right: 1rem;
+    }
+    #contactsPage .section .callBackform{
+        margin: 0 2rem 0 2.5rem;
+    }
+    #featuresBlock .section .container-fluid{
+        padding-top: 10vh;
+    }
+    #contactsPageSideBar{
+        width: 75vw;
+    }
+    .advantagesTitle{
+        font-size: 20px;
+        margin: 0;
+    }
+    .advSubTitle{
+        margin-bottom: 6px;
+    }
+    .advInfo{
+        padding: 0 2rem 0 3rem;
+    }
+    .featuresDetails{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .forFeaturesImg{
+        max-width: 200px;
+    }    
+    .opporTabsContent-item .opporDescrCol{
+        padding: 0 2rem 0 2.5rem;
+    }
+    .opporTabsContent-item .opporContainers{
+        padding-top: 9vh !important;
+    }
+    .middleWhiteLine {
+        display: none;
+    }
+    .opporTabsContent-item .opporDescrCol .forFeaturesInfo{
+        text-align: center;
+    }
+    .opporTabsContent-item .opporDescrCol h1.opporTitle,
+    #featuresBlock .titleColumn h1 {
+        margin-bottom: 0;
+        font-size: 1.1rem;
+    }
+    .opporTabsContent-item .opporDescrCol p.opporSubTitle{
+        margin-bottom: 0px;
+        font-size: .9rem;
+    }
+    .opporTabsContent-item .opporDescrCol p{
+        font-size: 0.8rem;
+    }
+    #fp-nav ul li{
+        margin-left: 0.6rem;
+    }
+    .aboutCompany,
+    .aboutProduct{
+        display: none;
+    }
+    .footer span:nth-child(2){
+        max-width: 96px;
+    }
+    .mapWrapper .down-section{
+        bottom: 5px;
+    }
+    .tabs{
+        max-width: 280px;
+        margin: 1rem 2.5rem;
+    }
+    #ulugbekTariff{
+        margin-left: 28px;
+    }
+    .tabsWrapper{
+        height: 100%;
+    }
+    .tab_content{
+        height: auto;
+    }
+    #ulugbekTariff .flex-wrapper{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .tabItemNewStyle{
+        margin: 0 2rem 1rem;
+        width: 300px;
+    }
+    .wrapperRight{
+        width: 300px;
+        height: 376px;
+        display: block;
+    }
+    .addOptionsTitle{
+        margin-bottom: 0 !important;
+    }
+    .additionalOptions h3,
+    .additionalOptions h3 i::before{
+        font-size: 1.5rem;
+    }
+    .additionalOptions #addOptionsCarousel .optionWrapper .optionIllustration{
+        max-width: 250px;
+        margin: auto;
+    }
+    .additionalOptions #addOptionsCarousel .optionWrapper .optionDetails .optionTitle{
+        width: 250px;
+    }
+    .additionalOptions #addOptionsCarousel .optionWrapper .optionDetails .optionPrice{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .additionalOptions .container{
+        margin-left: 8px;
+    }
+    .additionalOptions #addOptionsCarousel .owl-dots{
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+    .discountTitle{
+        margin-top: .9rem;
+    }
+    .discounts .alldiscountsListWrapper .discounts-details .discountPercent,
+    .discounts .alldiscountsListWrapper .discounts-details .discountTetle {
+        width: 100%;
+    }
+    .discounts .discountWhiteLine{
+        display: none;
+    }
+    .discounts .alldiscountsListWrapper .discounts-details .discountTetle{
+        font-size: 14px;
+        padding: 0 0 1rem;
+    }
+    .discounts .container{
+        padding-left: 2rem !important;
+    }
+    .faqTitleWrapper h3{
+        font-size: 1.3rem;
+    }
+    .otherDetails{
+        margin-top: 2rem;
+    }
+    .directionsLink,
+    .blockForVideo{
+        width: 75%;
+        margin: 0 0;
+    }
+    .blockForVideo{
+        margin: 2rem 0 1rem
+    }
+    .blockForVideo a {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+@media only screen and (max-width: 375px){    
+    .main-directions h3{
+        bottom: 40vh;
+    }
+    .blockForVideo{
+        margin-bottom: 1rem;
+    }
+    #contactsPageSideBar .openSideBarBtn{
+        width: 88px;
+    }
+    .tabs {
+        margin: 1.5rem;
+    }
+    .tabItemNewStyle{
+        margin: 0 .5rem;
+    }
+}
+@media screen and (max-width: 375px), screen and (max-height: 667px) {
+    .opportunity{
+        height: 48vh !important;
+    }
+    #contactsPageSideBar .openSideBarBtn{
+        top: 9vh;
+    }
+    .sideBarResponsive{
+        height: 45vh;
+    }
+}
+@media screen and (max-width: 375px),screen and (max-height: 812px) {
+    /* #fixRightSideBar {
+        height: 45vh;
+    } */
+    .main-directions h3 {
+        bottom: 45vh;
+    }
+    /* #fixRightSideBar .main-directions{
+        margin: auto;
+    } */
+}
+@media screen and (max-height: 667px){
+    .advantagesTitle{
+        font-size: 16px;
+    }
+    .advSubTitle{
+        font-size: 14px;
+    }
+    .forFeaturesInfo p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 360px), screen and (max-height: 640px) {
+    /* #fixRightSideBar{
+        height: 36vh;
+    } */
+    .main-directions h3 {
+        bottom: 35vh;
+    }
+    #contactsPageBody .fixRightSideBar.background .aboutWrapper{
+        overflow-y: scroll;
+        height: 100%;
+    }
+    .fixRightSideBar .aboutWrapper::after{
+        display: none;
+    }
+    .addOptionsTitle{
+        margin-top: 2rem;
+    }
+}
