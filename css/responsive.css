@@ -701,6 +701,26 @@
         -webkit-transform: translate3d(0, 101.5%, 0px);
                 transform: translate3d(0, 101.5%, 0px);
     }
+    .withSimilarBg .section{
+        background: none !important;
+    }
+    .openSideBarBtn{
+        display: none;
+    }
+    #ulugbekTariff{
+        margin-left: 0;
+        padding-left: 70px !important;
+        padding-top: 2vh;
+    }
+    .tabItemNewStyle{
+        width: 40%;
+    }
+    .wrapperRight{
+        width: 60%;
+    }
+    .tab-btn{
+        margin-right: 3rem;
+    }
 }
 
 @media screen and (min-width: 1024px) and (min-height: 1366px) {
@@ -792,13 +812,7 @@
     }
     .footer{
         padding: 0 15px !important;        
-    }
-    .tabs{
-        max-width: 600px;
-    }
-    .tabItemNewStyle{
-        width: 30%;
-    }
+    }    
     .tabItemNewStyle{
         margin-left: 0;
     }
