@@ -154,7 +154,6 @@ $(document).ready(function () {
     $('#navbarSupportedContent').removeClass('show');
     $('.navbar-toggler').removeClass('closeHamburger')
   });
-
   $(".miniDirectionsWrapper").mCustomScrollbar({
     theme: "dark-2"
   });
@@ -171,10 +170,10 @@ $(document).ready(function () {
     } else{
       $('.opportunity .featuresDetails').addClass('px-5')
     }
-    if ($window.width() <= 1366){      
+    if ($window.width() <= 1366 && $window.width() > 1024){      
       $('.tab_content .flex-wrapper').removeClass('justify-content-between');
       $('.tab_content .flex-wrapper').addClass('justify-content-start');
-    } else if ($window.width() > 1366){
+    } else {
       $('.tab_content .flex-wrapper').addClass('justify-content-between');
       $('.tab_content .flex-wrapper').removeClass('justify-content-start');
     }
@@ -338,6 +337,9 @@ $(document).ready(function () {
       $('.headerWrapper ul li.nav-item.active').removeClass('h-100');
       $('#contactsPageBody .fixRightSideBar.background .socials').removeClass('justify-content-center');
       $('#contactsPageBody .fixRightSideBar.background .socials').addClass('justify-content-around');
+      $('.section.discounts .container').removeClass('pl-0');
+      $('.discountsColumn').removeClass('col-lg-7');
+      $('.discountsColumn').addClass('col-lg-8');
     } else {
       $numbersForresponsive.removeClass('ml-auto');      
       $('.advSideBar').removeClass('slideRightSidebar');  
@@ -345,6 +347,9 @@ $(document).ready(function () {
       $('.headerWrapper ul li.nav-item.active').addClass('h-100');
       $('#contactsPageBody .fixRightSideBar.background .socials').addClass('justify-content-center');
       $('#contactsPageBody .fixRightSideBar.background .socials').removeClass('justify-content-around');
+      $('.section.discounts .container').addClass('pl-0');
+      $('.discountsColumn').removeClass('col-lg-8');
+      $('.discountsColumn').addClass('col-lg-7');
     }
     if ($window.width() <= 992) {
       $contactsPageImgCols.addClass('mx-auto');        

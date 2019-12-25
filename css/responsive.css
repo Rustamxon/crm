@@ -678,14 +678,8 @@
         opacity: 1;
         height: auto;
     }
-    .tabItemNewStyle{
-        margin-left: 2rem;
-    }
-    .wrapperRight{
-        margin-left: 4rem;
-    }
     #addOptionsCarousel{
-        max-width: 960px;
+        max-width: 100%;
         margin: 0 auto 0 1rem;
     }
     .additionalOptions .container{
@@ -698,6 +692,21 @@
         -webkit-transform: translate3d(0, 101.5%, 0px);
                 transform: translate3d(0, 101.5%, 0px);
     }
+    .withSimilarBg .section::before{
+        display: none;
+    }
+    .withSimilarBg::before{
+      content: "";
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, right top, from(#224b69), color-stop(#224b6980), to(#224b6957));
+      background: -webkit-linear-gradient(left, #224b69, #224b6980, #224b6957);
+      background: -o-linear-gradient(left, #224b69, #224b6980, #224b6957);
+      background: linear-gradient(to right, #224b69, #224b6980, #224b6957);
+      z-index: 1
+    }
     .withSimilarBg .section{
         background: none !important;
     }
@@ -709,14 +718,21 @@
         padding-left: 15px !important;
         padding-top: 2vh;
     }
+    .tariffs_All_Mob_Title{
+        display: block !important;
+    }
     .tabItemNewStyle{
-        width: 40%;
+        width: 35%;
     }
     .wrapperRight{
         width: 60%;
+        margin-left: auto;
     }
     .tab-btn{
         margin-right: 3rem;
+    }
+    .tab-btn:last-child{
+        margin-right: 0;
     }
     body{
         background-image: url(/img/bgi2.jpg);
@@ -724,6 +740,24 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+    }
+    .tariffs_All_Mob_Title{
+        margin-top: 2rem;
+    }
+    .additionalOptions #addOptionsCarousel .owl-nav{
+        height: 35px;
+        position: relative;
+        bottom: -2rem;
+    }
+    .additionalOptions #addOptionsCarousel .owl-dots{
+        bottom: -1.8rem;
+    }
+    .withSimilarBg .section.discounts{
+        margin-top: 2rem;
+    }
+    #faqCarousel{
+        max-width: 100%;
+        margin-bottom: 2rem;
     }
 }
 
@@ -794,10 +828,27 @@
     }
 }
 @media only screen and (max-width: 800px){
-
+    .tabItemNewStyle{
+        margin-left: 4rem;
+    }
+    .tarifOptionDetails{
+        width: 100%;
+    }
+    .wrapperRight{
+        margin-left: 1rem;
+        width: 53%;
+    }
+    #tariffs .section .container-fluid{
+        padding-top: 1rem !important;
+    }
+    .tariffs_All_Mob_Title{
+        margin-top: 1rem;
+    }
+    .tabsWrapper{
+        padding-top: 2rem;
+    }
 }
-@media only screen and (max-width: 768px){
-    
+@media only screen and (max-width: 768px){    
     header.headerWrapper .forLanguages{
         margin-right: 0;
     }
@@ -816,19 +867,13 @@
     }
     .footer{
         padding: 0 15px !important;        
-    }    
-    .tabItemNewStyle{
-        margin-left: 0;
-    }
+    }        
     .tabItemNewStyle h3{
         font-size: 1.3rem;
     }
-    .wrapperRight{
-        margin-left: 1rem;
-    }
-    .tarifOptionDetails{
-        width: 100%;
-    }
+    .tabItemNewStyle{
+        margin-left: 3rem;
+    }    
     .discounts .container{
         padding-left: 3rem !important;
     }
