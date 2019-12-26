@@ -13,62 +13,59 @@ $(document).ready(function () {
     var number = parseInt($(this).index());
     $.fn.fullpage.moveTo(number);
   });
-  $('#directionsModalCarousel').owlCarousel({
-    loop: false,
-    margin: 40,
-    nav: true,
-    navText: ["<img src='img/left.svg'>", "<img src='img/right.svg'>"],
-    dots: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      992: {
-        items: 3
-      },
-      1366:{
-        items: 4
-      }
-    }
-  });
-  $('.tariffsCarousel').owlCarousel({
-    loop: false,
-    margin: 10,
-    nav: false,
-    dots: false,
-    navText: ["<img src='img/arrowhead-thin-outline-to-the-left.svg'>", "<img src='img/arrow-point-to-right.svg'>"],
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      }
-    }
-  });
+  // $('#directionsModalCarousel').owlCarousel({
+  //   loop: false,
+  //   margin: 40,
+  //   nav: true,
+  //   navText: ["<img src='img/left.svg'>", "<img src='img/right.svg'>"],
+  //   dots: true,
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     },
+  //     768: {
+  //       items: 2
+  //     },
+  //     992: {
+  //       items: 3
+  //     },
+  //     1366:{
+  //       items: 4
+  //     }
+  //   }
+  // });
+  // $('.tariffsCarousel').owlCarousel({
+  //   loop: false,
+  //   margin: 10,
+  //   nav: false,
+  //   dots: false,
+  //   navText: ["<img src='img/arrowhead-thin-outline-to-the-left.svg'>", "<img src='img/arrow-point-to-right.svg'>"],
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     },
+  //     600: {
+  //       items: 3
+  //     },
+  //     1000: {
+  //       items: 5
+  //     }
+  //   }
+  // });
   $('#addOptionsCarousel').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 30,
     nav: true,
     navText: ["<img src='img/arrowhead-thin-outline-to-the-left.svg'>", "<img src='img/arrow-point-to-right.svg'>"],
     responsiveClass: true,
-    responsive: {
-      0: {
+    responsive:{
+      300:{
         items: 1
       },
       768: {
         items: 3
       },
-      992: {
-        items: 4
-      },
-      1366: {
+      992:{
         items: 4
       }
     }
@@ -363,8 +360,10 @@ $(document).ready(function () {
         axis: "x",
         theme: "light"
       });
+      $('#faqCarousel .container').removeClass('h-100');
     } else if ($window.width() > 800) {
       $('#tarif--items-list').mCustomScrollbar('destroy');
+      $('#faqCarousel .container').addClass('h-100');
     }    
   }).trigger('resize');
   $(document).on('click', '.tab-btn', function () {

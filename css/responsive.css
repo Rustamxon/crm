@@ -734,7 +734,7 @@
     .tab-btn:last-child{
         margin-right: 0;
     }
-    body{
+    .fullpageBlock{
         background-image: url(/img/bgi2.jpg);
         background-position: 50% 50%;
         background-size: cover;
@@ -847,6 +847,22 @@
     .tabsWrapper{
         padding-top: 2rem;
     }
+    .addOptionsTitle{
+        margin: 0 -15px 0 15px;
+    }
+    #faqCarousel .owl-item{
+        height: auto;
+    }
+    .middleWhiteLine{
+        display: none;
+    }
+    #faqCarousel .owl-nav{
+        position: relative;
+    }
+    #faqCarousel{
+        max-width: 100%;
+        padding: 0 1rem;
+    }
 }
 @media only screen and (max-width: 768px){    
     header.headerWrapper .forLanguages{
@@ -873,16 +889,6 @@
     }
     .tabItemNewStyle{
         margin-left: 3rem;
-    }    
-    .discounts .container{
-        padding-left: 3rem !important;
-    }
-    #faqCarousel{
-        max-width: 100%;
-        padding: 0 2rem;
-    }
-    #faqCarousel .owl-nav{
-        position: relative;
     }
 
 }
@@ -963,6 +969,9 @@
     #faqCarousel .owl-nav{
         bottom: 25px;
     }
+    #addOptionsCarousel .item:after{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 414px){
@@ -1040,14 +1049,12 @@
         bottom: 5px;
     }
     .tabs{
-        max-width: 280px;
-        margin: 1rem 2.5rem;
-    }
-    #ulugbekTariff{
-        margin-left: 28px;
+        max-width: 100%;
+        margin: 1rem 0;
     }
     .tabsWrapper{
         height: 100%;
+        padding-top: 0;
     }
     .tab_content{
         height: auto;
@@ -1057,7 +1064,7 @@
             flex-wrap: wrap;
     }
     .tabItemNewStyle{
-        margin: 0 2rem 1rem;
+        margin: 0 auto;
         width: 300px;
     }
     .wrapperRight{
