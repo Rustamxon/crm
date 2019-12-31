@@ -659,6 +659,9 @@
     #contactsPageBody .fixRightSideBar.background .socials a.socialsDetails {
         margin: 0 !important;
     }
+    #featuresBlock{
+        padding-top: 7rem !important;
+    }
     .forFeaturesImg{
         margin: auto;
         max-width: 350px;
@@ -701,6 +704,8 @@
       position: fixed;
       width: 100%;
       height: 100%;
+      top: 0;
+      left: 0;
       background: -webkit-gradient(linear, left top, right top, from(#224b69), color-stop(#224b6980), to(#224b6957));
       background: -webkit-linear-gradient(left, #224b69, #224b6980, #224b6957);
       background: -o-linear-gradient(left, #224b69, #224b6980, #224b6957);
@@ -758,6 +763,17 @@
     #faqCarousel{
         max-width: 100%;
         margin-bottom: 2rem;
+    }
+    .opporTabsContent-item{
+        position: static;
+        visibility: visible;
+        opacity: 1;
+    }
+    .middleWhiteLine{
+        margin: 1rem auto;
+    }
+    .opporTabsContent-item:last-child{
+        margin-bottom: 1rem;
     }
 }
 
@@ -972,6 +988,24 @@
     #addOptionsCarousel .item:after{
         display: none;
     }
+    #featuresBlock {
+        padding-top: 5rem !important;
+    }    
+    #featuresBlock .section .container-fluid{
+        padding-top: 0;
+    }
+    .advInfo{
+        padding: 0 27px;
+    }
+    .wrapperRight{
+        margin-left: 0;
+    }
+    .discounts .container{
+        padding-left: 12px !important;
+    }
+    #faqCarousel{
+        padding: 0 12px;
+    }
 }
 
 @media only screen and (max-width: 414px){
@@ -987,9 +1021,6 @@
     #contactsPage .section .callBackform{
         margin: 0 2rem 0 2.5rem;
     }
-    #featuresBlock .section .container-fluid{
-        padding-top: 10vh;
-    }
     #contactsPageSideBar{
         width: 75vw;
     }
@@ -1000,9 +1031,7 @@
     .advSubTitle{
         margin-bottom: 6px;
     }
-    .advInfo{
-        padding: 0 2rem 0 3rem;
-    }
+    
     .featuresDetails{
         padding-left: 0 !important;
         padding-right: 0 !important;
@@ -1054,7 +1083,7 @@
     }
     .tabsWrapper{
         height: 100%;
-        padding-top: 0;
+        padding: 0 12px;
     }
     .tab_content{
         height: auto;
@@ -1065,10 +1094,10 @@
     }
     .tabItemNewStyle{
         margin: 0 auto;
-        width: 300px;
+        width: 100%;
     }
     .wrapperRight{
-        width: 300px;
+        width: 100%;
         height: 376px;
         display: block;
     }
@@ -1112,9 +1141,7 @@
         font-size: 14px;
         padding: 0 0 1rem;
     }
-    .discounts .container{
-        padding-left: 2rem !important;
-    }
+    
     .faqTitleWrapper h3{
         font-size: 1.3rem;
     }
