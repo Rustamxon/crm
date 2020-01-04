@@ -231,7 +231,9 @@
   <script src="js/libs/select2-searchInputPlaceholder.js"></script>
   <!-- custom js start  -->
   <script src="js/slider.js"></script>
-  <script src="js/common.js"></script>
+  <!-- <script src="js/common.js"></script> -->
+  <script src="js/common2.js"></script>
+  <script src="js/responsive.js"></script>
   <script>
     ymaps.ready(init);
       var myMap,
@@ -257,8 +259,10 @@
           'scrollZoom',          
         ]);
         myMap.behaviors.enable([
-          'dblClickZoom',
-          // 'multiTouch'
+          'dblClickZoom'
+        ]);
+        myMap.behaviors.disable([
+          'multiTouch'
         ]);
         myMap.controls.remove('fullscreenControl');
       }

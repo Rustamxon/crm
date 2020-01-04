@@ -2136,6 +2136,7 @@ img {
   min-height: 600px;
   line-height: 1.5;
   font-weight: 300;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
 

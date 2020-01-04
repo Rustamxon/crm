@@ -739,13 +739,13 @@
     .tab-btn:last-child{
         margin-right: 0;
     }
-    .fullpageBlock{
+    /* .fullpageBlock{
         background-image: url(/img/bgi2.jpg);
         background-position: 50% 50%;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-    }
+    } */
     .tariffs_All_Mob_Title{
         margin-top: 2rem;
     }
@@ -768,6 +768,10 @@
         position: static;
         visibility: visible;
         opacity: 1;
+        display: block !important;
+        -webkit-transform: none !important;
+            -ms-transform: none !important;
+                transform: none !important;
     }
     .middleWhiteLine{
         margin: 1rem auto;
@@ -838,9 +842,6 @@
 @media only screen and (max-width: 991px) {
     #contactsPage .section .callBackform {
         margin-left: 4rem;
-    }
-    .tabs {
-        max-width: 650px;
     }
 }
 @media only screen and (max-width: 800px){
@@ -1171,9 +1172,6 @@
     }
     #contactsPageSideBar .openSideBarBtn{
         width: 88px;
-    }
-    .tabs {
-        margin: 1.5rem;
     }
     .tabItemNewStyle{
         margin: 0 .5rem;
