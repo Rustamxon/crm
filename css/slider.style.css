@@ -105,7 +105,10 @@
 .slider_main_block .navi {
   z-index: 2;
   position: absolute;
-  top: 30vh;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   height: auto;
   max-width: 22px;
   left: 1.5rem;

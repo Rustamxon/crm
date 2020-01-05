@@ -20,7 +20,6 @@
         background-image: url("../img/flags@2x.png");
     }
 }
-
 @media only screen and (max-width: 1920px) {
     .container-fluid{
         max-width: 1780px
@@ -28,8 +27,7 @@
     header.headerWrapper .forLanguages{
         margin-right: 0;
     }
-} 
-
+}
 @media only screen and (max-width: 1800px) {
     .container-fluid{
         max-width: 1600px
@@ -37,8 +35,7 @@
     header.headerWrapper .contactNumbers::after{
         right: -4.3vw;
     }
-} 
-
+}
 @media only screen and (max-width: 1680px) {
     .container-fluid{
         max-width: 1500px
@@ -78,7 +75,6 @@
         max-width: 1024px;
     }
 }
-
 @media only screen and (max-width: 1600px) {
     .container-fluid{
         max-width: 1440px
@@ -114,7 +110,6 @@
     }
     
 }
-
 @media only screen and (max-width: 1536px) {
     .container-fluid{
         max-width: 1380px
@@ -140,26 +135,22 @@
     }
 
 }
-
 @media only screen and (max-width: 1440px) {
     .container-fluid {
         max-width: 1280px
     }
     header.headerWrapper .contactNumbers{
-        display: none !important;
+        /* display: none !important; */
         margin-right: 0;
     }
     header.headerWrapper .contactNumbers::after{
         display: none;
-    }
-    header.headerWrapper .numbersForresponsive{
-        display: block;
-    }
+    }    
     header.headerWrapper .forLanguages{
         margin-right: -1.4rem;
     }
     header.headerWrapper .demoAccesHeartBeat{
-        margin-top: 6px;
+        margin-top: 5px;
     }
     header.headerWrapper .numbersForresponsive .numbersListOpen i::before{
         font-size: 1.5rem;
@@ -213,7 +204,6 @@
         max-width: 880px;
     }
 }
-
 @media only screen and (max-width: 1366px) {
     .container-fluid {
         max-width: 1240px
@@ -228,9 +218,6 @@
     }
     header.headerWrapper nav.navbar{
         padding-right: 0;
-    }
-    .mainPageElementsWrapper{
-        margin-top: 31.5vh;
     }
     h1.heading_tittle {
         font-size: 2rem;
@@ -279,7 +266,6 @@
     
 
 }
-
 @media only screen and (max-width: 1280px) {
     .container-fluid{
         max-width: 1200px
@@ -289,6 +275,9 @@
     }
     header.headerWrapper .forLanguages{
         margin-right: 0;
+    }
+    header.headerWrapper .demoAccesHeartBeat{
+        margin-top: 8px;
     }
     /* COntacts Page start  */
     .fixRightSideBar .aboutWrapper .aboutCompany{
@@ -309,8 +298,6 @@
     }
 
 }
-
-
 @media only screen and (max-width: 1200px) {
     .container-fluid{
         max-width: 100%;
@@ -334,7 +321,11 @@
         margin-right: 3rem;
         outline: none !important;
     }
+    header.headerWrapper .contactNumbers{
+        display: none !important;
+    }
     header.headerWrapper .numbersForresponsive {
+        display: block;
         margin-right: 2rem;
     }
     header.headerWrapper nav.navbar .navbar-collapse{
@@ -385,7 +376,6 @@
     .mainPageElementsWrapper{
         margin-left: 0;
         padding: 0 4rem;
-        margin-top: 10vh;
         text-align: center;
     }
     .mainPageElementsWrapper h1.heading-title{
@@ -559,7 +549,6 @@
         opacity: 1;
     }
 }
-
 @media only screen and (max-width: 1152px) {
     .advantagesTitle{
         font-size: 1.5rem;
@@ -580,7 +569,6 @@
     } */
 
 }
-
 @media only screen and (max-width: 1024px) {
     header.headerWrapper .blockForLogo {
         position: absolute;
@@ -597,7 +585,7 @@
         transform: translate3d(-110%, 102%, 0px);
         left: -15px;
         width: 100vw;
-        height: 92vh;
+        height: 93vh;
     }    
     header.headerWrapper nav.navbar .navbar-collapse.show {
         -webkit-transform: translate3d(0, 102%, 0px);
@@ -780,7 +768,6 @@
         margin-bottom: 1rem;
     }
 }
-
 @media screen and (min-width: 1024px) and (min-height: 1366px) {
     .sideBarResponsive {
         height: 24vh;
@@ -945,7 +932,6 @@
         height: 40px;
     }
     .mainPageElementsWrapper{
-        margin-top: 50%;
         padding: 0 1.8rem;
     }
     .headerWrapper .forLanguages #otherLanguages{
@@ -1008,7 +994,6 @@
         padding: 0 12px;
     }
 }
-
 @media only screen and (max-width: 414px){
     .fixRightSideBar .aboutWrapper h3{
         margin-bottom: 0;

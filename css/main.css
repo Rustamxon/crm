@@ -1228,7 +1228,11 @@ img {
 }
 
 .mainPageElementsWrapper {
-  margin-top: 29vh;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .heading_tittle {
@@ -2315,7 +2319,7 @@ img {
   color: white;
 }
 
-.headerWrapper ul li:nth-child(2) {
+.headerWrapper ul.navbar-nav li:nth-child(2) {
   display: none !important;
 }
 /*# sourceMappingURL=main.css.map */
