@@ -226,6 +226,9 @@ function initOwlCarousel() {
     nav: true,
     navText: ["<img src='img/arrowhead-thin-outline-to-the-left.svg'>", "<img src='img/arrow-point-to-right.svg'>"],
     responsive: {
+      0: {
+        margin: 0
+      },
       768: {
         items: 3
       },
@@ -236,7 +239,7 @@ function initOwlCarousel() {
   });
   $('#faqCarousel').owlCarousel({
     loop: false,
-    margin: 50,
+    margin: 5,
     nav: true,
     navText: ["<img src='img/arrowhead-thin-outline-to-the-left.svg'>", "<img src='img/arrow-point-to-right.svg'>"],
     items: 1,

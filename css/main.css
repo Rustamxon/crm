@@ -1533,24 +1533,10 @@ img {
   font-size: 0.9rem;
 }
 
-#opporPageBody {
-  background: -webkit-gradient(linear, left top, right top, from(#224b69), color-stop(#224b6980), to(#224b6957));
-  background: -webkit-linear-gradient(left, #224b69, #224b6980, #224b6957);
-  background: -o-linear-gradient(left, #224b69, #224b6980, #224b6957);
-  background: linear-gradient(to right, #224b69, #224b6980, #224b6957);
-}
-
 .opporChangeList span:first-child {
   height: 0;
   opacity: 0;
   display: none;
-}
-
-.opporTabsContent {
-  background: -webkit-gradient(linear, left top, right top, from(#224b69), color-stop(#224b6980), to(#224b6957));
-  background: -webkit-linear-gradient(left, #224b69, #224b6980, #224b6957);
-  background: -o-linear-gradient(left, #224b69, #224b6980, #224b6957);
-  background: linear-gradient(to right, #224b69, #224b6980, #224b6957);
 }
 
 .opporTabsContent-item {
@@ -1962,6 +1948,7 @@ img {
 
 .additionalOptions #addOptionsCarousel .owl-nav button:nth-child(1) {
   float: left;
+  margin-left: 0;
 }
 
 .additionalOptions #addOptionsCarousel .owl-nav button:nth-child(2) {
@@ -2056,6 +2043,7 @@ img {
 
 #faqCarousel {
   max-width: 1200px;
+  margin: 0 auto 0 0;
 }
 
 #faqCarousel .owl-item {
@@ -2079,6 +2067,7 @@ img {
 
 #faqCarousel .owl-nav button:nth-child(1) {
   float: left;
+  margin-left: 0;
 }
 
 #faqCarousel .owl-nav button:nth-child(2) {

@@ -20,6 +20,11 @@ function responsive() {
   } else {
     $('.opportunity .featuresDetails').addClass('px-5')
   }
+  if ($window.width() <= 1440) {
+    $('.faqSection .container-fluid').addClass('justify-content-center');
+  } else{
+    $('.faqSection .container-fluid').removeClass('justify-content-center');
+  }
   if ($window.width() <= 1366 && $window.width() > 1024) {
     $('.tab_content .flex-wrapper').removeClass('justify-content-between');
     $('.tab_content .flex-wrapper').addClass('justify-content-start');
@@ -55,7 +60,7 @@ function responsive() {
     $('#featuresBlock .col-md-9').addClass('mx-auto');
     $('.additionalOptions .container').removeClass(['pl-0', 'ml-0']);
     $('.discounts .container').removeClass('ml-0');
-    $('.faqSection .container-fluid').addClass('justify-content-center');
+    
     $('.faqSection .container-fluid').removeClass('pl-0');
     // $responsiveDirections.addClass('responsiveDirections');
     // $(".responsiveDirections").mCustomScrollbar({
@@ -71,7 +76,7 @@ function responsive() {
     $('#featuresBlock .col-md-9').removeClass('mx-auto');
     $('.additionalOptions .container').removeClass(['pl-0', 'ml-0']);
     $('.discounts .container').addClass('ml-0');
-    $('.faqSection .container-fluid').removeClass('justify-content-center');
+    
     $('.faqSection .container-fluid').addClass('pl-0');
     // $(".responsiveDirections").mCustomScrollBar('destroy');
     // $responsiveDirections.removeClass('responsiveDirections');
@@ -112,6 +117,7 @@ function responsive() {
     $('.section.discounts .container').removeClass('pl-0');
     $('.discountsColumn').removeClass('col-lg-7');
     $('.discountsColumn').addClass('col-lg-8');
+    $('#opporChangeList-tab-content .opporTabsContent-item').removeClass('withSimilarBg');
   } else {
     $numbersForresponsive.removeClass('ml-auto');
     $('.advSideBar').removeClass('slideRightSidebar');
@@ -122,6 +128,7 @@ function responsive() {
     $('.section.discounts .container').addClass('pl-0');
     $('.discountsColumn').removeClass('col-lg-8');
     $('.discountsColumn').addClass('col-lg-7');
+    $('#opporChangeList-tab-content .opporTabsContent-item').addClass('withSimilarBg')
   }
   if ($window.width() <= 992) {
     $contactsPageImgCols.addClass('mx-auto');
