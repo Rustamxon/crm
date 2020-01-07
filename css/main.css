@@ -86,14 +86,6 @@ body {
   }
 }
 
-body.bluredModal header, body.bluredModal .carouselWrapper, body.bluredModal .section, body.bluredModal .right-sideWrapper {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-  -webkit-transition: blur .5s ease-in-out;
-  -o-transition: blur .5s ease-in-out;
-  transition: blur .5s ease-in-out;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -1533,6 +1525,13 @@ img {
   font-size: 0.9rem;
 }
 
+#opporPageBody {
+  background: -webkit-gradient(linear, left top, right top, from(#224b69), color-stop(#224b6980), to(#224b6957));
+  background: -webkit-linear-gradient(left, #224b69, #224b6980, #224b6957);
+  background: -o-linear-gradient(left, #224b69, #224b6980, #224b6957);
+  background: linear-gradient(to right, #224b69, #224b6980, #224b6957);
+}
+
 .opporChangeList span:first-child {
   height: 0;
   opacity: 0;
@@ -1605,9 +1604,9 @@ img {
 }
 
 .featuresDetails span.activeFeature {
-  background-color: #64c100;
+  background-color: #16d719;
   color: #fff;
-  border-color: #64c100;
+  border-color: #16d719;
 }
 
 .advSideBar .usualShow, .opportunity .usualShow, .tariffs .usualShow, .products .usualShow {
@@ -1616,9 +1615,14 @@ img {
   border-color: #224b69;
 }
 
-.advSideBar .usualShow:hover, .opportunity .usualShow:hover, .tariffs .usualShow:hover, .products .usualShow:hover {
-  background-color: #64c100;
-  border-color: #64c100;
+.advSideBar .usualShow:hover, .advSideBar .usualShow:active, .opportunity .usualShow:hover, .opportunity .usualShow:active, .tariffs .usualShow:hover, .tariffs .usualShow:active, .products .usualShow:hover, .products .usualShow:active {
+  background-color: #16d719 !important;
+  border-color: #16d719 !important;
+}
+
+.advSideBar .usualShow.active, .opportunity .usualShow.active, .tariffs .usualShow.active, .products .usualShow.active {
+  background-color: #16d719 !important;
+  border-color: #16d719 !important;
 }
 
 #contactsPageBody .contactsPageLeftNavbar ul li a span {
@@ -1926,7 +1930,7 @@ img {
 }
 
 .additionalOptions #addOptionsCarousel .optionWrapper .optionDetails .optionDeadLine {
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
 }
 
 .additionalOptions #addOptionsCarousel .owl-nav {
@@ -2120,6 +2124,9 @@ img {
 
 .tarifNewImg {
   width: 165px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   border-radius: 50%;
   padding: 1.1rem;
   background-color: #2d5871;
@@ -2283,7 +2290,7 @@ img {
   left: -15px;
   display: block;
   z-index: 9;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #featuresBlock .titleColumn h1 {
@@ -2306,6 +2313,15 @@ img {
 
 .tab-btn.active {
   color: white;
+}
+
+.tab-btn.active .tarifNewImg {
+  border: 5px solid #16d719;
+}
+
+.tab-btn span {
+  display: inline-block;
+  padding: 8px 0 6px;
 }
 
 .headerWrapper ul.navbar-nav li:nth-child(2) {

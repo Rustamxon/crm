@@ -36,10 +36,10 @@ body
   
   to 
     transform: rotate(359deg)
-body.bluredModal
-  header, .carouselWrapper , .section, .right-sideWrapper
-    filter: blur(2px)
-    transition: blur .5s ease-in-out
+// body.bluredModal
+//   header, .carouselWrapper , .section, .right-sideWrapper
+//     filter: blur(2px)
+//     transition: blur .5s ease-in-out
 img
   max-width: 100%
   height: auto
@@ -468,6 +468,8 @@ img
   font-size: 2rem
 .opportunities p
   font-size: 0.9rem
+#opporPageBody
+  background: linear-gradient(to right, #224b69, #224b6980, #224b6957)
 .opporChangeList span:first-child
   height: 0
   opacity: 0
@@ -520,18 +522,20 @@ img
     color: #000
     cursor: pointer
   span.activeFeature
-    background-color: #64c100
+    background-color: #16d719
     color: #fff
-    border-color: #64c100
+    border-color: #16d719
 .advSideBar, .opportunity, .tariffs, .products
   .usualShow
     color: #fff
     background-color: #224b69
     border-color: #224b69
-    &:hover
-      background-color: #64c100
-      border-color: #64c100
-// .opportunity
+    &:hover, &:active
+      background-color: #16d719 !important
+      border-color: #16d719 !important
+    &.active
+      background-color: #16d719 !important
+      border-color: #16d719 !important
 //   .featuresDetails
 //     width: 96.5%
 #contactsPageBody
@@ -758,7 +762,7 @@ img
           color: #fff
           margin: 1rem 0
         .optionDeadLine
-          color: rgba(255, 255, 255, .5)
+          color: rgba(255, 255, 255, 1)
     .owl-nav
       position: absolute
       bottom: -3rem

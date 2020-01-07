@@ -281,7 +281,7 @@
     }
     /* COntacts Page start  */
     .fixRightSideBar .aboutWrapper .aboutCompany{
-        margin-top: 0;
+        margin-top: 1rem;
     }
     #contactsPageBody .fixRightSideBar.background .socials a.socialsDetails:last-child{
         margin-right: 2.5rem;
@@ -702,9 +702,18 @@
     }
     .withSimilarBg .section{
         background: none !important;
-    }
+    }    
     .openSideBarBtn{
         display: none;
+    }
+    #contactsPageSideBar{
+        z-index: 9;
+    }
+    #contactsPageSideBar .openSideBarBtn{
+        display: block;
+    }
+    #contactsPageSideBar button.openSideBarBtn::active{
+        background-color: #ccc;
     }
     #ulugbekTariff{
         margin-left: 0;
@@ -777,7 +786,15 @@
     .opporTabsContent-item:last-child{
         padding-bottom: 1rem;
     }
-    
+    #formBlock{
+        height: 93vh;
+    }
+    .down-section.scrol-flex{
+        display: none;
+    }
+    .footer{
+        position: relative;
+    }
 }
 @media screen and (min-width: 1024px) and (min-height: 1366px) {
     .sideBarResponsive {
@@ -826,6 +843,15 @@
         font-size: 13px;
         line-height: 20px;
         letter-spacing: .3px;
+    }
+    #contactsPageBody .fixRightSideBar.background .aboutWrapper{
+        padding-top: 1rem;
+    }
+    #contactsPageBody .fixRightSideBar.background .aboutWrapper div{
+        margin-bottom: 0;
+    }
+    #contactsPageBody .fixRightSideBar .aboutWrapper .aboutCompany {
+        margin-top: 0;
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1366px) and (max-height: 768px) {
@@ -886,6 +912,15 @@
     }
     .opporTabsContent-item .opporDescrCol p{
         margin-bottom: 1rem;
+    }
+    .opportunities .forFeaturesInfo{
+        text-align: center;
+    }
+    .opporsWrapperRow .opperDescription{
+        margin-left: .75rem;
+    }
+    .opporDescrCol{
+        margin-left: 0;
     }
 }
 @media only screen and (max-width: 768px){    
@@ -1020,6 +1055,9 @@
     #faqCarousel .owl-nav{
         bottom: 25px;
     }
+    #contactsPageBody .fixRightSideBar.background .aboutWrapper{
+        padding-top: 3rem;
+    }
 }
 @media only screen and (max-width: 414px){
     .fixRightSideBar .aboutWrapper h3{
@@ -1140,6 +1178,9 @@
     .discountTitle{
         margin-top: .9rem;
     }
+    .discounts .alldiscountsListWrapper .discounts-details .discountPercent{
+        margin-bottom: 0.8rem;
+    }
     .discounts .alldiscountsListWrapper .discounts-details .discountPercent,
     .discounts .alldiscountsListWrapper .discounts-details .discountTetle {
         width: 100%;
@@ -1191,7 +1232,7 @@
         height: 48vh !important;
     }
     #contactsPageSideBar .openSideBarBtn{
-        top: 9vh;
+        top: 12vh;
     }
     .sideBarResponsive{
         height: 45vh;

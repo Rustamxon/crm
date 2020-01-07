@@ -82,9 +82,9 @@ $(document).ready(function () {
       $(".respNumbersList").removeClass("showlist");
     }
   });
-  $('#demoBlurEffect').on('click', function () {
-    $('body').addClass('bluredModal');
-  });
+  // $('#demoBlurEffect').on('click', function () {
+  //   $('body').addClass('bluredModal');
+  // });
   $('#exampleModal2').on('hidden.bs.modal', function () {
     $('body').removeClass('bluredModal');
   });
