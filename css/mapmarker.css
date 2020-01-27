@@ -1,5 +1,5 @@
 
-#geoLocationmap .ymaps-2-1-74-map .ymaps-2-1-74-image {
+#geoLocationmap .ymaps-2-1-75-places-pane .ymaps-2-1-75-image {
   -webkit-animation: bounce 3s infinite;
   animation: bounce 3s infinite;
 }
@@ -33,19 +33,16 @@
   50%,
   80%,
   100% {
-    -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
   40% {
-    -ms-transform: translateY(-30px);
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
 
   60% {
-    -ms-transform: translateY(-15px);
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
